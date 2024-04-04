@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\PersonnelShiftSystem.Web.props" />
+</Project>

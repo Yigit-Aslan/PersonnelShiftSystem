@@ -10,4 +10,8 @@
     <ProjectReference Include="..\PersonnelShifySystem.Infrastructure\PersonnelShiftSystem.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Validators\" />
+  </ItemGroup>
+
 </Project>

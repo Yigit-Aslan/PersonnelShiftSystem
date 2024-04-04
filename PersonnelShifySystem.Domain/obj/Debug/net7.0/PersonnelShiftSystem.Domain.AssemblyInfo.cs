@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PersonnelShiftSystem.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f68706b0ae0e448cdff6ba849ea9e279b15b1670")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6ab4142bdaf465b6ba3358ad43586dfd18a5f6cf")]
 [assembly: System.Reflection.AssemblyProductAttribute("PersonnelShiftSystem.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PersonnelShiftSystem.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "PvNwn30k/sgcRejYyVfHkikUQ/yh31FxD9BP1ETRYX0JqBj5srPDjQcSFNmfSl24pOgkORchxOQO2XJpZgu2YA==",
+  "dgSpecHash": "uiStpMAD/NrZG3r8/soufeEP/2SxqVHIL2abfLfbIgkhbQWOyJLhRgxn8QsxZUXe6fxigsbYmc/Yu7eZGP+fwA==",
   "success": true,
-  "projectFilePath": "C:\\Project\\PersonnelShiftSystem\\PersonnelShifySystem.Domain\\PersonnelShiftSystem.Domain.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\DorGoetzer\\Documents\\GitHub\\PersonnelShiftSystem\\PersonnelShifySystem.Domain\\PersonnelShiftSystem.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\DorGoetzer\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512"
+  ],
   "logs": []
 }
