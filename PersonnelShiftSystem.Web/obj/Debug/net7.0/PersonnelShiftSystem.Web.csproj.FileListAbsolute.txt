@@ -1,3 +1,13 @@
+C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShiftSystem.Web\obj\Debug\net7.0\PersonnelShiftSystem.Web.csproj.AssemblyReference.cache
+C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShiftSystem.Web\obj\Debug\net7.0\PersonnelShiftSystem.Web.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShiftSystem.Web\obj\Debug\net7.0\PersonnelShiftSystem.Web.AssemblyInfoInputs.cache
+C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShiftSystem.Web\obj\Debug\net7.0\PersonnelShiftSystem.Web.AssemblyInfo.cs
+C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShiftSystem.Web\obj\Debug\net7.0\PersonnelShiftSystem.Web.csproj.CoreCompileInputs.cache
+C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShiftSystem.Web\obj\Debug\net7.0\PersonnelShiftSystem.Web.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShiftSystem.Web\obj\Debug\net7.0\PersonnelShiftSystem.Web.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShiftSystem.Web\obj\Debug\net7.0\PersonnelShiftSystem.Web.RazorAssemblyInfo.cache
+C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShiftSystem.Web\obj\Debug\net7.0\PersonnelShiftSystem.Web.RazorAssemblyInfo.cs
+C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShiftSystem.Web\obj\Debug\net7.0\PersonnelShiftSystem.Web.sourcelink.json
 C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShiftSystem.Web\bin\Debug\net7.0\appsettings.Development.json
 C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShiftSystem.Web\bin\Debug\net7.0\appsettings.json
 C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShiftSystem.Web\bin\Debug\net7.0\PersonnelShiftSystem.Web.staticwebassets.runtime.json
@@ -9,6 +19,7 @@ C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShiftSystem.W
 C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShiftSystem.Web\bin\Debug\net7.0\AutoMapper.dll
 C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShiftSystem.Web\bin\Debug\net7.0\Azure.Core.dll
 C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShiftSystem.Web\bin\Debug\net7.0\Azure.Identity.dll
+C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShiftSystem.Web\bin\Debug\net7.0\BCrypt.Net-Next.dll
 C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShiftSystem.Web\bin\Debug\net7.0\JetBrains.Annotations.dll
 C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShiftSystem.Web\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShiftSystem.Web\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
@@ -55,15 +66,6 @@ C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShiftSystem.W
 C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShiftSystem.Web\bin\Debug\net7.0\PersonnelShiftSystem.Application.pdb
 C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShiftSystem.Web\bin\Debug\net7.0\PersonnelShiftSystem.Domain.pdb
 C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShiftSystem.Web\bin\Debug\net7.0\PersonnelShiftSystem.Infrastructure.pdb
-C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShiftSystem.Web\obj\Debug\net7.0\PersonnelShiftSystem.Web.csproj.AssemblyReference.cache
-C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShiftSystem.Web\obj\Debug\net7.0\PersonnelShiftSystem.Web.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShiftSystem.Web\obj\Debug\net7.0\PersonnelShiftSystem.Web.AssemblyInfoInputs.cache
-C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShiftSystem.Web\obj\Debug\net7.0\PersonnelShiftSystem.Web.AssemblyInfo.cs
-C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShiftSystem.Web\obj\Debug\net7.0\PersonnelShiftSystem.Web.csproj.CoreCompileInputs.cache
-C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShiftSystem.Web\obj\Debug\net7.0\PersonnelShiftSystem.Web.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShiftSystem.Web\obj\Debug\net7.0\PersonnelShiftSystem.Web.RazorAssemblyInfo.cache
-C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShiftSystem.Web\obj\Debug\net7.0\PersonnelShiftSystem.Web.RazorAssemblyInfo.cs
-C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShiftSystem.Web\obj\Debug\net7.0\PersonnelShiftSystem.Web.sourcelink.json
 C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShiftSystem.Web\obj\Debug\net7.0\staticwebassets.build.json
 C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShiftSystem.Web\obj\Debug\net7.0\staticwebassets.development.json
 C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShiftSystem.Web\obj\Debug\net7.0\staticwebassets\msbuild.PersonnelShiftSystem.Web.Microsoft.AspNetCore.StaticWebAssets.props
@@ -80,5 +82,3 @@ C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShiftSystem.W
 C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShiftSystem.Web\obj\Debug\net7.0\PersonnelShiftSystem.Web.pdb
 C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShiftSystem.Web\obj\Debug\net7.0\PersonnelShiftSystem.Web.genruntimeconfig.cache
 C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShiftSystem.Web\obj\Debug\net7.0\ref\PersonnelShiftSystem.Web.dll
-C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShiftSystem.Web\bin\Debug\net7.0\BCrypt.Net-Next.dll
-C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShiftSystem.Web\obj\Debug\net7.0\PersonnelShiftSystem.Web.MvcApplicationPartsAssemblyInfo.cs

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AutoMapper;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,6 +10,7 @@ namespace PersonnelShiftSystem.Domain.Interfaces
     public interface IBaseModel
     {
         IUnitOfWork BaseUnitOfWork { get; set; }
+        IMapper Mapper { get; set; }
 
         byte ItemActive();
 

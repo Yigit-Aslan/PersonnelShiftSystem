@@ -1497,6 +1497,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "AutoMapper": "13.0.1",
           "BCrypt.Net-Next": "4.0.3"
         },
         "compile": {

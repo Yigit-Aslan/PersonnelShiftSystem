@@ -1,6 +1,7 @@
 C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShifySystem.Domain\bin\Debug\net7.0\PersonnelShiftSystem.Domain.deps.json
 C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShifySystem.Domain\bin\Debug\net7.0\PersonnelShiftSystem.Domain.dll
 C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShifySystem.Domain\bin\Debug\net7.0\PersonnelShiftSystem.Domain.pdb
+C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShifySystem.Domain\obj\Debug\net7.0\PersonnelShiftSystem.Domain.csproj.AssemblyReference.cache
 C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShifySystem.Domain\obj\Debug\net7.0\PersonnelShiftSystem.Domain.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShifySystem.Domain\obj\Debug\net7.0\PersonnelShiftSystem.Domain.AssemblyInfoInputs.cache
 C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShifySystem.Domain\obj\Debug\net7.0\PersonnelShiftSystem.Domain.AssemblyInfo.cs
@@ -10,4 +11,3 @@ C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShifySystem.D
 C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShifySystem.Domain\obj\Debug\net7.0\refint\PersonnelShiftSystem.Domain.dll
 C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShifySystem.Domain\obj\Debug\net7.0\PersonnelShiftSystem.Domain.pdb
 C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShifySystem.Domain\obj\Debug\net7.0\ref\PersonnelShiftSystem.Domain.dll
-C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShifySystem.Domain\obj\Debug\net7.0\PersonnelShiftSystem.Domain.csproj.AssemblyReference.cache

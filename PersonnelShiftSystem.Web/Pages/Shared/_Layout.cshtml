@@ -1,37 +1,32 @@
 ﻿<!DOCTYPE html>
-
-<html lang="en" data-bs-theme="light">
-<!--begin::Head-->
+<html lang="en">
 <head>
-	<title>@ViewData["Title"] IhyaTekstilAdmin</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta property="og:locale" content="en_US">
-	<meta property="og:type" content="article">
-	<meta property="og:title" content="İhya Tekstil">
-	<meta property="og:url" content="https://keenthemes.com/metronic">
-	<meta property="og:site_name" content="Metronic by Keenthemes">
-	<link rel="canonical" href="https://preview.keenthemes.com/metronic8">
-	<link rel="shortcut icon" href="~/assets/media/companyimages/İHYA TEKSTİL-01[79].png">
-	<!--begin::Fonts(mandatory for all pages)-->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700">
-	<!--end::Fonts-->
-	<!--begin::Vendor Stylesheets(used for this page only)-->
-	<link href="~/assets/plugins/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css">
-	<link href="~/assets/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.6/dist/sweetalert2.min.css">
-	<!--end::Vendor Stylesheets-->
-	<!--begin::Global Stylesheets Bundle(mandatory for all pages)-->
-	<link href="~/assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css">
-	<link href="~/assets/css/style.bundle.css" rel="stylesheet" type="text/css">
-	<!--end::Global Stylesheets Bundle-->
+    <title>@ViewData["Title"] PersonnelShiftSystem.Web</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="PersonnelShiftSystem">
+    <meta property="og:url" content="https://keenthemes.com/metronic">
+    <meta property="og:site_name" content="Metronic by Keenthemes">
+    <link rel="canonical" href="https://preview.keenthemes.com/metronic8">
+	<link rel="shortcut icon" href="~/assets/media/features-logos/metronic.png">
+    <!--begin::Fonts(mandatory for all pages)-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700">
+    <!--end::Fonts-->
+    <!--begin::Vendor Stylesheets(used for this page only)-->
+    <link href="~/assets/plugins/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css">
+    <link href="~/assets/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.6/dist/sweetalert2.min.css">
+    <!--end::Vendor Stylesheets-->
+    <!--begin::Global Stylesheets Bundle(mandatory for all pages)-->
+    <link href="~/assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css">
+    <link href="~/assets/css/style.bundle.css" rel="stylesheet" type="text/css">
+    <!--end::Global Stylesheets Bundle-->
 
-	<script>// Frame-busting to prevent site from being loaded within a frame without permission (click-jacking) if (window.top != window.self) { window.top.location.replace(window.self.location.href); }</script>
+    <script>// Frame-busting to prevent site from being loaded within a frame without permission (click-jacking) if (window.top != window.self) { window.top.location.replace(window.self.location.href); }</script>
 
 </head>
-
-<!--end::Head-->
-<!--begin::Body-->
 <body id="kt_app_body" data-kt-app-header-stacked="true" data-kt-app-header-primary-enabled="true" data-kt-app-header-secondary-enabled="true" data-kt-app-header-tertiary-enabled="true" class="app-default">
 	<!--begin::Theme mode setup on page load-->
 	<script>var defaultThemeMode = "light"; var themeMode; if (document.documentElement) { if (document.documentElement.hasAttribute("data-bs-theme-mode")) { themeMode = document.documentElement.getAttribute("data-bs-theme-mode"); } else { if (localStorage.getItem("data-bs-theme") !== null) { themeMode = localStorage.getItem("data-bs-theme"); } else { themeMode = defaultThemeMode; } } if (themeMode === "system") { themeMode = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"; } document.documentElement.setAttribute("data-bs-theme", themeMode); }</script>
@@ -138,9 +133,9 @@
 								<!--end::Header mobile toggle-->
 								<!--begin::Logo-->
 								<a href="~/Dashboard" class="d-flex align-items-center me-2">
-									<img alt="Logo" src="~/assets/media/companyimages/İHYA TEKSTİL-01[79].png" class="h-20px d-sm-none d-inline theme-light-show">
-									<img alt="Logo" src="~/assets/media/companyimages/İHYA TEKSTİL-01[79].png" class="h-20px h-lg-150px theme-light-show d-none d-sm-inline">
-									<img alt="Logo" src="~/assets/media/companyimages/İHYA TEKSTİL-01[79].png" class="h-20px h-lg-150px theme-dark-show">
+									<img alt="Logo" src="~/assets/media/features-logos/metronic.png" class="h-20px d-sm-none d-inline theme-light-show">
+									<img alt="Logo" src="~/assets/media/features-logos/metronic.png" class="h-20px h-lg-150px theme-light-show d-none d-sm-inline">
+									<img alt="Logo" src="~/assets/media/features-logos/metronic.png" class="h-20px h-lg-150px theme-dark-show">
 								</a>
 								<!--end::Logo-->
 							</div>
@@ -156,13 +151,11 @@
 				<!--begin::Header tertiary-->
 				@{
 					<!-- MENÜ YOLLARI-->
-					var products =   "Products/ProductList";
-					var category =   "Categories/CategoryList";
-					var subCategory =   "SubCategories/SubCategoryList";
-					var color =   "Colors/ColorList";
-					var orders =   "Orders/OrderList";
 					var dashboard = "~/Dashboard";
-					var users = "~/Users/UserList";				}
+					var team = "~/Teams/TeamList";
+					var shift = "~/Shift/ShiftList";
+					var users =  "~/Users/UserList";
+				}
 
 				<!--end::Header tertiary-->
 				<div class="app-header-tertiary app-header-mobile-drawer" data-kt-drawer="true" data-kt-drawer-name="app-header-menu" data-kt-drawer-activate="{default: true, lg: false}" data-kt-drawer-overlay="true" data-kt-drawer-width="225px" data-kt-drawer-direction="start" data-kt-drawer-toggle="#kt_app_header_menu_toggle" data-kt-sticky="false" data-kt-sticky-name="app-header-tertiary-sticky" data-kt-sticky-offset="{default: 'false', lg: '300px'}" data-kt-swapper="true" data-kt-swapper-mode="append" data-kt-swapper-parent="{default: '#kt_app_body', lg: '#kt_app_header'}" style="">
@@ -200,14 +193,14 @@
 										<!--begin:Menu item-->
 										<div class="menu-item">
 											<!--begin:Menu link-->
-											<a class="menu-link py-3" href="@products" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-dismiss="click" data-bs-placement="right" data-bs-original-title="Check out over 200 in-house components, plugins and ready for use solutions" data-kt-initialized="1">
+											<a class="menu-link py-3" href="@team" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-dismiss="click" data-bs-placement="right" data-bs-original-title="Check out over 200 in-house components, plugins and ready for use solutions" data-kt-initialized="1">
 												<span class="menu-icon">
 													<i class="ki-duotone ki-rocket fs-2">
 														<span class="path1"></span>
 														<span class="path2"></span>
 													</i>
 												</span>
-												<span class="menu-title">Ürünleri Listele</span>
+												<span class="menu-title">Takımları Listele</span>
 											</a>
 											<!--end:Menu link-->
 										</div>
@@ -229,105 +222,14 @@
 										<!--begin:Menu item-->
 										<div class="menu-item">
 											<!--begin:Menu link-->
-											<a class="menu-link py-3" href="@category" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-dismiss="click" data-bs-placement="right" data-bs-original-title="Check out over 200 in-house components, plugins and ready for use solutions" data-kt-initialized="1">
+											<a class="menu-link py-3" href="@shift" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-dismiss="click" data-bs-placement="right" data-bs-original-title="Check out over 200 in-house components, plugins and ready for use solutions" data-kt-initialized="1">
 												<span class="menu-icon">
 													<i class="ki-duotone ki-rocket fs-2">
 														<span class="path1"></span>
 														<span class="path2"></span>
 													</i>
 												</span>
-												<span class="menu-title">Kategorileri Listele</span>
-											</a>
-											<a class="menu-link py-3" href="@subCategory" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-dismiss="click" data-bs-placement="right" data-bs-original-title="Check out over 200 in-house components, plugins and ready for use solutions" data-kt-initialized="1">
-												<span class="menu-icon">
-													<i class="ki-duotone ki-rocket fs-2">
-														<span class="path1"></span>
-														<span class="path2"></span>
-													</i>
-												</span>
-												<span class="menu-title">Alt Kategorileri Listele</span>
-											</a>
-											<!--end:Menu link-->
-										</div>
-										<!--end:Menu item-->
-									</div>
-									<!--end:Menu sub-->
-								</div>
-								<div data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-placement="bottom-start" class="menu-item menu-lg-down-accordion menu-sub-lg-down-indention me-0 me-lg-2">
-									<!--begin:Menu link-->
-									<span class="menu-link py-3">
-										<span class="menu-title">Renk</span>
-										<span class="menu-arrow d-lg-none"></span>
-									</span>
-									<!--end:Menu link-->
-									<!--begin:Menu sub-->
-									<div class="menu-sub menu-sub-lg-down-accordion menu-sub-lg-dropdown px-lg-2 py-lg-4 w-lg-200px" style="">
-										<!--begin:Menu item-->
-										<div class="menu-item">
-											<!--begin:Menu link-->
-											<a class="menu-link py-3" href="@color" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-dismiss="click" data-bs-placement="right" data-bs-original-title="Check out over 200 in-house components, plugins and ready for use solutions" data-kt-initialized="1">
-												<span class="menu-icon">
-													<i class="ki-duotone ki-rocket fs-2">
-														<span class="path1"></span>
-														<span class="path2"></span>
-													</i>
-												</span>
-												<span class="menu-title">Renkleri Listele</span>
-											</a>
-											<!--end:Menu link-->
-										</div>
-										<!--end:Menu item-->
-									</div>
-									<!--end:Menu sub-->
-								</div>
-								<div data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-placement="bottom-start" class="menu-item menu-lg-down-accordion menu-sub-lg-down-indention me-0 me-lg-2">
-									<!--begin:Menu link-->
-									<span class="menu-link py-3">
-										<span class="menu-title">Sipariş</span>
-										<span class="menu-arrow d-lg-none"></span>
-									</span>
-									<!--end:Menu link-->
-									<!--begin:Menu sub-->
-									<div class="menu-sub menu-sub-lg-down-accordion menu-sub-lg-dropdown px-lg-2 py-lg-4 w-lg-200px" style="">
-										<!--begin:Menu item-->
-										<div class="menu-item">
-											<!--begin:Menu link-->
-											<a class="menu-link py-3" href="@orders" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-dismiss="click" data-bs-placement="right" data-bs-original-title="Check out over 200 in-house components, plugins and ready for use solutions" data-kt-initialized="1">
-												<span class="menu-icon">
-													<i class="ki-duotone ki-rocket fs-2">
-														<span class="path1"></span>
-														<span class="path2"></span>
-													</i>
-												</span>
-												<span class="menu-title">Siparişleri Listele</span>
-											</a>
-											<!--end:Menu link-->
-										</div>
-										<!--end:Menu item-->
-									</div>
-									<!--end:Menu sub-->
-								</div>
-
-								<div data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-placement="bottom-start" class="menu-item menu-lg-down-accordion menu-sub-lg-down-indention me-0 me-lg-2">
-									<!--begin:Menu link-->
-									<span class="menu-link py-3">
-										<span class="menu-title">Kullanıcılar</span>
-										<span class="menu-arrow d-lg-none"></span>
-									</span>
-									<!--end:Menu link-->
-									<!--begin:Menu sub-->
-									<div class="menu-sub menu-sub-lg-down-accordion menu-sub-lg-dropdown px-lg-2 py-lg-4 w-lg-200px" style="">
-										<!--begin:Menu item-->
-										<div class="menu-item">
-											<!--begin:Menu link-->
-											<a class="menu-link py-3" href="@users" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-dismiss="click" data-bs-placement="right" data-bs-original-title="Check out over 200 in-house components, plugins and ready for use solutions" data-kt-initialized="1">
-												<span class="menu-icon">
-													<i class="ki-duotone ki-rocket fs-2">
-														<span class="path1"></span>
-														<span class="path2"></span>
-													</i>
-												</span>
-												<span class="menu-title">Kullanıcıları Listele</span>
+												<span class="menu-title">Vardiyaları Listele</span>
 											</a>
 											<!--end:Menu link-->
 										</div>
@@ -3580,24 +3482,3 @@
 	<svg id="SvgjsSvg1001" width="2" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev" style="overflow: hidden; top: -100%; left: -100%; position: absolute; opacity: 0;"><defs id="SvgjsDefs1002"></defs><polyline id="SvgjsPolyline1003" points="0,0"></polyline><path id="SvgjsPath1004" d="M-1 2440.020000000012L-1 2440.020000000012C-1 2440.020000000012 28.469618055555557 2440.020000000012 28.469618055555557 2440.020000000012C28.469618055555557 2440.020000000012 56.939236111111114 2440.020000000012 56.939236111111114 2440.020000000012C56.939236111111114 2440.020000000012 85.40885416666667 2440.020000000012 85.40885416666667 2440.020000000012C85.40885416666667 2440.020000000012 113.87847222222223 2440.020000000012 113.87847222222223 2440.020000000012C113.87847222222223 2440.020000000012 142.3480902777778 2440.020000000012 142.3480902777778 2440.020000000012C142.3480902777778 2440.020000000012 170.81770833333334 2440.020000000012 170.81770833333334 2440.020000000012C170.81770833333334 2440.020000000012 199.2873263888889 2440.020000000012 199.2873263888889 2440.020000000012C199.2873263888889 2440.020000000012 227.75694444444446 2440.020000000012 227.75694444444446 2440.020000000012C227.75694444444446 2440.020000000012 256.2265625 2440.020000000012 256.2265625 2440.020000000012C256.2265625 2440.020000000012 284.6961805555556 2440.020000000012 284.6961805555556 2440.020000000012C284.6961805555556 2440.020000000012 313.16579861111114 2440.020000000012 313.16579861111114 2440.020000000012C313.16579861111114 2440.020000000012 341.6354166666667 2440.020000000012 341.6354166666667 2440.020000000012C341.6354166666667 2440.020000000012 370.10503472222223 2440.020000000012 370.10503472222223 2440.020000000012C370.10503472222223 2440.020000000012 398.5746527777778 2440.020000000012 398.5746527777778 2440.020000000012C398.5746527777778 2440.020000000012 427.04427083333337 2440.020000000012 427.04427083333337 2440.020000000012C427.04427083333337 2440.020000000012 455.5138888888889 2440.020000000012 455.5138888888889 2440.020000000012C455.5138888888889 2440.020000000012 483.98350694444446 2440.020000000012 483.98350694444446 2440.020000000012C483.98350694444446 2440.020000000012 512.453125 2440.020000000012 512.453125 2440.020000000012C512.453125 2440.020000000012 512.453125 2440.020000000012 512.453125 2440.020000000012C512.453125 2440.020000000012 512.453125 2440.020000000012 512.453125 2440.020000000012 "></path></svg>
 </body><!--end::Body-->
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,4 +1,5 @@
 C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShifySystem.Infrastructure\bin\Debug\net7.0\PersonnelShiftSystem.Infrastructure.deps.json
+C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShifySystem.Infrastructure\bin\Debug\net7.0\PersonnelShiftSystem.Infrastructure.runtimeconfig.json
 C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShifySystem.Infrastructure\bin\Debug\net7.0\PersonnelShiftSystem.Infrastructure.dll
 C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShifySystem.Infrastructure\bin\Debug\net7.0\PersonnelShiftSystem.Infrastructure.pdb
 C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShifySystem.Infrastructure\bin\Debug\net7.0\PersonnelShiftSystem.Domain.dll
@@ -13,6 +14,5 @@ C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShifySystem.I
 C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShifySystem.Infrastructure\obj\Debug\net7.0\PersonnelShiftSystem.Infrastructure.dll
 C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShifySystem.Infrastructure\obj\Debug\net7.0\refint\PersonnelShiftSystem.Infrastructure.dll
 C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShifySystem.Infrastructure\obj\Debug\net7.0\PersonnelShiftSystem.Infrastructure.pdb
-C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShifySystem.Infrastructure\obj\Debug\net7.0\ref\PersonnelShiftSystem.Infrastructure.dll
-C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShifySystem.Infrastructure\bin\Debug\net7.0\PersonnelShiftSystem.Infrastructure.runtimeconfig.json
 C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShifySystem.Infrastructure\obj\Debug\net7.0\PersonnelShiftSystem.Infrastructure.genruntimeconfig.cache
+C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShifySystem.Infrastructure\obj\Debug\net7.0\ref\PersonnelShiftSystem.Infrastructure.dll

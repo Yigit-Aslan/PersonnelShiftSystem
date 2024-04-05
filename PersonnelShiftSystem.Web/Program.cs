@@ -14,17 +14,17 @@ builder.Services.AddRazorPages();
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddMvc();
 builder.Services.AddScoped<PersonnelShiftSystem.Domain.Interfaces.IBaseModel, BaseModel>();
-builder.Services.AddScoped<PersonnelShiftSystem.Domain.Interfaces.IUnitOfWork,UnitOfWork>();
-builder.Services.AddScoped<PersonnelContext>();
-builder.Services.AddDbContext<PersonnelContext>(options =>
-    options.UseSqlServer(configuration.GetConnectionString("DefaultConnection"), sqlServerOptionsAction: options =>
-    {
-        options.EnableRetryOnFailure();
-    }));
+builder.Services.AddScoped<PersonnelShiftSystem.Domain.Interfaces.IUnitOfWork, UnitOfWork>();
+builder.Services.AddDbContext<PersonnelContext>();
+//builder.Services.AddDbContext<PersonnelContext>(options =>
+//    options.UseSqlServer(configuration.GetConnectionString("DefaultConnection"), sqlServerOptionsAction: options =>
+//    {
+//        options.EnableRetryOnFailure();
+//    }));
 
 
 builder.Services.AddScoped(typeof(PersonnelShiftSystem.Domain.Interfaces.IRepository<>), typeof(Repository<>));
-builder.Services.AddAutoMapper(x => x.AddProfile<PersonnelShiftSystem.Infrastructure.MapperProfile.AutoMapperProfile>(), typeof(Program));
+builder.Services.AddAutoMapper(x => x.AddProfile<PersonnelShiftSystem.Application.MapperProfile.AutoMapperProfile>(), typeof(Program));
 builder.Services.AddCors();
 //builder.Services.AddMvc().AddRazorPagesOptions(options => options.Conventions.AddPageRoute("/Login/Index", ""));
 builder.Services.AddDetection();

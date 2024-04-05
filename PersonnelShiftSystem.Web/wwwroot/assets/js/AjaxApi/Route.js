@@ -7,7 +7,7 @@ $(document).ready(postLogin.addEventListener('click', async function (event) {
 
     // Diğer form verilerini de FormData'ya ekleyebilirsiniz
     formData.append("MailAddress", document.getElementById("MailAddress").value);
-    formData.append("password", document.getElementById("password").value);
+    formData.append("Password", document.getElementById("Password").value);
 
     var action = $('#postForm').attr('action');
 

@@ -12,8 +12,8 @@ namespace PersonnelShiftSystem.Domain.Models
         public string ShiftName { get; set; }
         public DateTime StartingDate { get; set; }
         public DateTime EndingDate { get; set; }
-        public TimeOnly ShiftStart { get; set; }
-        public TimeOnly ShiftEnd { get; set; }
+        public TimeSpan ShiftStart { get; set; }
+        public TimeSpan ShiftEnd { get; set; }
         public byte IsActive { get; set; }
         public int CreatedBy { get; set; }
         public DateTime CreatedDate { get; set; }

@@ -18,6 +18,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShiftSystem.Web
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/DorGoetzer/Documents/GitHub/PersonnelShiftSystem/PersonnelShiftSystem.Web/Pages/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/DorGoetzer/Documents/GitHub/PersonnelShiftSystem/PersonnelShiftSystem.Web/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -32,6 +36,22 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/DorGoetzer/Documents/GitHub/PersonnelShiftSystem/PersonnelShiftSystem.Web/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DorGoetzer/Documents/GitHub/PersonnelShiftSystem/PersonnelShiftSystem.Web/Pages/Teams/TeamAdd.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVhbXNcVGVhbUFkZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DorGoetzer/Documents/GitHub/PersonnelShiftSystem/PersonnelShiftSystem.Web/Pages/Teams/TeamList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVhbXNcVGVhbUxpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DorGoetzer/Documents/GitHub/PersonnelShiftSystem/PersonnelShiftSystem.Web/Pages/Users/UserAdd.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcVXNlckFkZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DorGoetzer/Documents/GitHub/PersonnelShiftSystem/PersonnelShiftSystem.Web/Pages/Users/UserList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcVXNlckxpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/DorGoetzer/Documents/GitHub/PersonnelShiftSystem/PersonnelShiftSystem.Web/Pages/_ViewImports.cshtml]

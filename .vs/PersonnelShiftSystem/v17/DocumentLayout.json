@@ -3,28 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\DorGoetzer\\Documents\\GitHub\\PersonnelShiftSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4629DD95-AE57-483A-A803-BA20FA805E51}|PersonnelShifySystem.Application\\PersonnelShiftSystem.Application.csproj|c:\\users\\dorgoetzer\\documents\\github\\personnelshiftsystem\\personnelshifysystem.application\\services\\loginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4629DD95-AE57-483A-A803-BA20FA805E51}|PersonnelShifySystem.Application\\PersonnelShiftSystem.Application.csproj|solutionrelative:personnelshifysystem.application\\services\\loginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CC050155-1AB4-41D7-8E69-04D5BEDBAD10}|PersonnelShiftSystem.Web\\PersonnelShiftSystem.Web.csproj|c:\\users\\dorgoetzer\\documents\\github\\personnelshiftsystem\\personnelshiftsystem.web\\pages\\teams\\teamlist.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC050155-1AB4-41D7-8E69-04D5BEDBAD10}|PersonnelShiftSystem.Web\\PersonnelShiftSystem.Web.csproj|solutionrelative:personnelshiftsystem.web\\pages\\teams\\teamlist.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E856858-973D-4004-9120-06C8197CB572}|PersonnelShiftSystem.Web\\PersonnelShiftSystem.Web.csproj|c:\\users\\dorgoetzer\\documents\\github\\personnelshiftsystem\\personnelshiftsystem.web\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E856858-973D-4004-9120-06C8197CB572}|PersonnelShiftSystem.Web\\PersonnelShiftSystem.Web.csproj|solutionrelative:personnelshiftsystem.web\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CC050155-1AB4-41D7-8E69-04D5BEDBAD10}|PersonnelShiftSystem.Web\\PersonnelShiftSystem.Web.csproj|c:\\users\\dorgoetzer\\documents\\github\\personnelshiftsystem\\personnelshiftsystem.web\\pages\\users\\userlist.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC050155-1AB4-41D7-8E69-04D5BEDBAD10}|PersonnelShiftSystem.Web\\PersonnelShiftSystem.Web.csproj|solutionrelative:personnelshiftsystem.web\\pages\\users\\userlist.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D31FD79A-AB0F-4D74-9265-307A58B6D584}|PersonnelShifySystem.Domain\\PersonnelShiftSystem.Domain.csproj|c:\\users\\dorgoetzer\\documents\\github\\personnelshiftsystem\\personnelshifysystem.domain\\models\\siteuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D31FD79A-AB0F-4D74-9265-307A58B6D584}|PersonnelShifySystem.Domain\\PersonnelShiftSystem.Domain.csproj|solutionrelative:personnelshifysystem.domain\\models\\siteuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CC050155-1AB4-41D7-8E69-04D5BEDBAD10}|PersonnelShiftSystem.Web\\PersonnelShiftSystem.Web.csproj|c:\\users\\dorgoetzer\\documents\\github\\personnelshiftsystem\\personnelshiftsystem.web\\pages\\users\\userlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CC050155-1AB4-41D7-8E69-04D5BEDBAD10}|PersonnelShiftSystem.Web\\PersonnelShiftSystem.Web.csproj|solutionrelative:personnelshiftsystem.web\\pages\\users\\userlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4629DD95-AE57-483A-A803-BA20FA805E51}|PersonnelShifySystem.Application\\PersonnelShiftSystem.Application.csproj|c:\\users\\dorgoetzer\\documents\\github\\personnelshiftsystem\\personnelshifysystem.application\\exceptions\\exceptionhandlers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4629DD95-AE57-483A-A803-BA20FA805E51}|PersonnelShifySystem.Application\\PersonnelShiftSystem.Application.csproj|solutionrelative:personnelshifysystem.application\\exceptions\\exceptionhandlers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CC050155-1AB4-41D7-8E69-04D5BEDBAD10}|PersonnelShiftSystem.Web\\PersonnelShiftSystem.Web.csproj|c:\\users\\dorgoetzer\\documents\\github\\personnelshiftsystem\\personnelshiftsystem.web\\pages\\teams\\teamlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CC050155-1AB4-41D7-8E69-04D5BEDBAD10}|PersonnelShiftSystem.Web\\PersonnelShiftSystem.Web.csproj|solutionrelative:personnelshiftsystem.web\\pages\\teams\\teamlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{05B9B964-70E6-4A8B-991F-95C386DB98B3}|PersonnelShifySystem.Infrastructure\\PersonnelShiftSystem.Infrastructure.csproj|c:\\users\\dorgoetzer\\documents\\github\\personnelshiftsystem\\personnelshifysystem.infrastructure\\repository\\basemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{05B9B964-70E6-4A8B-991F-95C386DB98B3}|PersonnelShifySystem.Infrastructure\\PersonnelShiftSystem.Infrastructure.csproj|solutionrelative:personnelshifysystem.infrastructure\\repository\\basemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4629DD95-AE57-483A-A803-BA20FA805E51}|PersonnelShifySystem.Application\\PersonnelShiftSystem.Application.csproj|c:\\users\\dorgoetzer\\documents\\github\\personnelshiftsystem\\personnelshifysystem.application\\viewmodels\\teamview\\teamviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4629DD95-AE57-483A-A803-BA20FA805E51}|PersonnelShifySystem.Application\\PersonnelShiftSystem.Application.csproj|solutionrelative:personnelshifysystem.application\\viewmodels\\teamview\\teamviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{05B9B964-70E6-4A8B-991F-95C386DB98B3}|PersonnelShifySystem.Infrastructure\\PersonnelShiftSystem.Infrastructure.csproj|c:\\users\\dorgoetzer\\documents\\github\\personnelshiftsystem\\personnelshifysystem.infrastructure\\repository\\personnelcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{05B9B964-70E6-4A8B-991F-95C386DB98B3}|PersonnelShifySystem.Infrastructure\\PersonnelShiftSystem.Infrastructure.csproj|solutionrelative:personnelshifysystem.infrastructure\\repository\\personnelcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4629DD95-AE57-483A-A803-BA20FA805E51}|PersonnelShifySystem.Application\\PersonnelShiftSystem.Application.csproj|c:\\users\\dorgoetzer\\documents\\github\\personnelshiftsystem\\personnelshifysystem.application\\mapperprofile\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4629DD95-AE57-483A-A803-BA20FA805E51}|PersonnelShifySystem.Application\\PersonnelShiftSystem.Application.csproj|solutionrelative:personnelshifysystem.application\\mapperprofile\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC050155-1AB4-41D7-8E69-04D5BEDBAD10}|PersonnelShiftSystem.Web\\PersonnelShiftSystem.Web.csproj|c:\\users\\dorgoetzer\\documents\\github\\personnelshiftsystem\\personnelshiftsystem.web\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CC050155-1AB4-41D7-8E69-04D5BEDBAD10}|PersonnelShiftSystem.Web\\PersonnelShiftSystem.Web.csproj|solutionrelative:personnelshiftsystem.web\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,88 +38,101 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserList.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\DorGoetzer\\Documents\\GitHub\\PersonnelShiftSystem\\PersonnelShiftSystem.Web\\Pages\\Users\\UserList.cshtml.cs",
+              "RelativeDocumentMoniker": "PersonnelShiftSystem.Web\\Pages\\Users\\UserList.cshtml.cs",
+              "ToolTip": "C:\\Users\\DorGoetzer\\Documents\\GitHub\\PersonnelShiftSystem\\PersonnelShiftSystem.Web\\Pages\\Users\\UserList.cshtml.cs",
+              "RelativeToolTip": "PersonnelShiftSystem.Web\\Pages\\Users\\UserList.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-05T01:10:24.659Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TeamList.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\DorGoetzer\\Documents\\GitHub\\PersonnelShiftSystem\\PersonnelShiftSystem.Web\\Pages\\Teams\\TeamList.cshtml.cs",
+              "RelativeDocumentMoniker": "PersonnelShiftSystem.Web\\Pages\\Teams\\TeamList.cshtml.cs",
+              "ToolTip": "C:\\Users\\DorGoetzer\\Documents\\GitHub\\PersonnelShiftSystem\\PersonnelShiftSystem.Web\\Pages\\Teams\\TeamList.cshtml.cs",
+              "RelativeToolTip": "PersonnelShiftSystem.Web\\Pages\\Teams\\TeamList.cshtml.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABIAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-05T01:10:02.679Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AutoMapperProfile.cs",
+              "DocumentMoniker": "C:\\Users\\DorGoetzer\\Documents\\GitHub\\PersonnelShiftSystem\\PersonnelShifySystem.Application\\MapperProfile\\AutoMapperProfile.cs",
+              "RelativeDocumentMoniker": "PersonnelShifySystem.Application\\MapperProfile\\AutoMapperProfile.cs",
+              "ToolTip": "C:\\Users\\DorGoetzer\\Documents\\GitHub\\PersonnelShiftSystem\\PersonnelShifySystem.Application\\MapperProfile\\AutoMapperProfile.cs",
+              "RelativeToolTip": "PersonnelShifySystem.Application\\MapperProfile\\AutoMapperProfile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAABcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-05T01:07:51.991Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TeamViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\DorGoetzer\\Documents\\GitHub\\PersonnelShiftSystem\\PersonnelShifySystem.Application\\ViewModels\\TeamView\\TeamViewModel.cs",
+              "RelativeDocumentMoniker": "PersonnelShifySystem.Application\\ViewModels\\TeamView\\TeamViewModel.cs",
+              "ToolTip": "C:\\Users\\DorGoetzer\\Documents\\GitHub\\PersonnelShiftSystem\\PersonnelShifySystem.Application\\ViewModels\\TeamView\\TeamViewModel.cs",
+              "RelativeToolTip": "PersonnelShifySystem.Application\\ViewModels\\TeamView\\TeamViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-05T01:06:45.734Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TeamList.cshtml",
+              "DocumentMoniker": "C:\\Users\\DorGoetzer\\Documents\\GitHub\\PersonnelShiftSystem\\PersonnelShiftSystem.Web\\Pages\\Teams\\TeamList.cshtml",
+              "RelativeDocumentMoniker": "PersonnelShiftSystem.Web\\Pages\\Teams\\TeamList.cshtml",
+              "ToolTip": "C:\\Users\\DorGoetzer\\Documents\\GitHub\\PersonnelShiftSystem\\PersonnelShiftSystem.Web\\Pages\\Teams\\TeamList.cshtml",
+              "RelativeToolTip": "PersonnelShiftSystem.Web\\Pages\\Teams\\TeamList.cshtml",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAAAGAAAABiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-05T00:39:10.198Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserList.cshtml",
+              "DocumentMoniker": "C:\\Users\\DorGoetzer\\Documents\\GitHub\\PersonnelShiftSystem\\PersonnelShiftSystem.Web\\Pages\\Users\\UserList.cshtml",
+              "RelativeDocumentMoniker": "PersonnelShiftSystem.Web\\Pages\\Users\\UserList.cshtml",
+              "ToolTip": "C:\\Users\\DorGoetzer\\Documents\\GitHub\\PersonnelShiftSystem\\PersonnelShiftSystem.Web\\Pages\\Users\\UserList.cshtml",
+              "RelativeToolTip": "PersonnelShiftSystem.Web\\Pages\\Users\\UserList.cshtml",
+              "ViewState": "AQIAAJAAAAAAAAAAAAAAAJcAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-05T00:39:03.91Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\DorGoetzer\\Documents\\GitHub\\PersonnelShiftSystem\\PersonnelShiftSystem.Web\\Pages\\Index.cshtml.cs",
-              "RelativeDocumentMoniker": "PersonnelShiftSystem.Web\\Pages\\Index.cshtml.cs",
-              "ToolTip": "C:\\Users\\DorGoetzer\\Documents\\GitHub\\PersonnelShiftSystem\\PersonnelShiftSystem.Web\\Pages\\Index.cshtml.cs",
-              "RelativeToolTip": "PersonnelShiftSystem.Web\\Pages\\Index.cshtml.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAywBwAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T15:47:17.376Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "LoginService.cs",
-              "DocumentMoniker": "C:\\Users\\DorGoetzer\\Documents\\GitHub\\PersonnelShiftSystem\\PersonnelShifySystem.Application\\Services\\LoginService.cs",
-              "RelativeDocumentMoniker": "PersonnelShifySystem.Application\\Services\\LoginService.cs",
-              "ToolTip": "C:\\Users\\DorGoetzer\\Documents\\GitHub\\PersonnelShiftSystem\\PersonnelShifySystem.Application\\Services\\LoginService.cs",
-              "RelativeToolTip": "PersonnelShifySystem.Application\\Services\\LoginService.cs",
-              "ViewState": "AQIAACQAAAAAAAAAAAAUwD0AAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T15:47:17.387Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BaseModel.cs",
-              "DocumentMoniker": "C:\\Users\\DorGoetzer\\Documents\\GitHub\\PersonnelShiftSystem\\PersonnelShifySystem.Infrastructure\\Repository\\BaseModel.cs",
-              "RelativeDocumentMoniker": "PersonnelShifySystem.Infrastructure\\Repository\\BaseModel.cs",
-              "ToolTip": "C:\\Users\\DorGoetzer\\Documents\\GitHub\\PersonnelShiftSystem\\PersonnelShifySystem.Infrastructure\\Repository\\BaseModel.cs",
-              "RelativeToolTip": "PersonnelShifySystem.Infrastructure\\Repository\\BaseModel.cs",
-              "ViewState": "AQIAADIAAAAAAAAAAIAwwEYAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T15:47:07.331Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ExceptionHandlers.cs",
-              "DocumentMoniker": "C:\\Users\\DorGoetzer\\Documents\\GitHub\\PersonnelShiftSystem\\PersonnelShifySystem.Application\\Exceptions\\ExceptionHandlers.cs",
-              "RelativeDocumentMoniker": "PersonnelShifySystem.Application\\Exceptions\\ExceptionHandlers.cs",
-              "ToolTip": "C:\\Users\\DorGoetzer\\Documents\\GitHub\\PersonnelShiftSystem\\PersonnelShifySystem.Application\\Exceptions\\ExceptionHandlers.cs",
-              "RelativeToolTip": "PersonnelShifySystem.Application\\Exceptions\\ExceptionHandlers.cs",
-              "ViewState": "AQIAADkAAAAAAAAAAAApwFAAAAAzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T15:47:02.429Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Siteuser.cs",
-              "DocumentMoniker": "C:\\Users\\DorGoetzer\\Documents\\GitHub\\PersonnelShiftSystem\\PersonnelShifySystem.Domain\\Models\\Siteuser.cs",
-              "RelativeDocumentMoniker": "PersonnelShifySystem.Domain\\Models\\Siteuser.cs",
-              "ToolTip": "C:\\Users\\DorGoetzer\\Documents\\GitHub\\PersonnelShiftSystem\\PersonnelShifySystem.Domain\\Models\\Siteuser.cs",
-              "RelativeToolTip": "PersonnelShifySystem.Domain\\Models\\Siteuser.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAwAAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T15:46:04.84Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PersonnelContext.cs",
-              "DocumentMoniker": "C:\\Users\\DorGoetzer\\Documents\\GitHub\\PersonnelShiftSystem\\PersonnelShifySystem.Infrastructure\\Repository\\PersonnelContext.cs",
-              "RelativeDocumentMoniker": "PersonnelShifySystem.Infrastructure\\Repository\\PersonnelContext.cs",
-              "ToolTip": "C:\\Users\\DorGoetzer\\Documents\\GitHub\\PersonnelShiftSystem\\PersonnelShifySystem.Infrastructure\\Repository\\PersonnelContext.cs",
-              "RelativeToolTip": "PersonnelShifySystem.Infrastructure\\Repository\\PersonnelContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T15:46:00.515Z",
+              "DocumentIndex": 6,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\DorGoetzer\\Documents\\GitHub\\PersonnelShiftSystem\\PersonnelShiftSystem.Web\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "PersonnelShiftSystem.Web\\Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\DorGoetzer\\Documents\\GitHub\\PersonnelShiftSystem\\PersonnelShiftSystem.Web\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "PersonnelShiftSystem.Web\\Pages\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAALoAAAAAAAAAAAAAAOcAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-05T00:36:22.456Z",
               "EditorCaption": ""
             }
           ]

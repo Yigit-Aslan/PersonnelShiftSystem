@@ -17,9 +17,22 @@ namespace PersonnelShiftSystem.Infrastructure.Repository
         }
 
         public DbSet<Siteuser> Siteuser { get; set; }
-        public DbSet<Role> Roles { get; set; }
+        public DbSet<Role> Role { get; set; }
+        public DbSet<Team> Team { get; set; }
+        public DbSet<PersonnelTeam> PersonnelTeam { get; set; }
+        public DbSet<Shift> Shift { get; set; }
+        public DbSet<AssignTeamShift> AssignTeamShift { get; set; }
+        public DbSet<ErrorLog> ErrorLog { get; set; }
+        public DbSet<UserLoginHistory> UserLoginHistory { get; set; }
 
-
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            IConfigurationRoot configuration = new ConfigurationBuilder()
+		    .SetBasePath(AppDomain.CurrentDomain.BaseDirectory)
+		    .AddJsonFile("appsettings.json")
+		    .Build();
+            optionsBuilder.UseSqlServer(configuration.GetConnectionString("DefaultConnection"));
+        }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

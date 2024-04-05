@@ -28,7 +28,7 @@ namespace PersonnelShiftSystem.Web.Pages
         {
             var loginResult = await _loginService.LoginAsync(LoginModel);
 
-            if(loginResult is OkObjectResult)
+            if (loginResult is OkObjectResult)
             {
                 return new JsonResult(new { isSuccess = true, url = "Dashboard" });
             }
