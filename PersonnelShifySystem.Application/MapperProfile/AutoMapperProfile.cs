@@ -13,6 +13,8 @@ namespace PersonnelShiftSystem.Application.MapperProfile
         {
             CreateMap<ViewModels.UserView.UserViewModel, Domain.Models.Siteuser>().ReverseMap();
             CreateMap<ViewModels.TeamView.TeamViewModel, Domain.Models.Team>().ReverseMap();
+            CreateMap<Dtos.TeamDto, Domain.Models.Team>().ReverseMap();
+            CreateMap<Dtos.PersonnelTeamDto, Domain.Models.PersonnelTeam>().ReverseMap();
         }
     }
 }

@@ -18,6 +18,9 @@ namespace PersonnelShiftSystem.Domain.Models
         public int CreatedBy { get; set; }
         public DateTime CreatedDate { get; set; }
         public int? UpdatedBy { get; set; }
-        public DateTime? UpdatedDate { get; set; } 
-    }
+        public DateTime? UpdatedDate { get; set; }
+
+		public ICollection<AssignTeamShift> AssignTeamShift { get; set; }
+
+	}
 }

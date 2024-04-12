@@ -9,7 +9,7 @@ namespace PersonnelShiftSystem.Domain.Models
     public class Siteuser
     {
         public int Id {  get; set; }
-        public int PersonnelCode { get; set; }
+        public string PersonnelCode { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
         public string MailAddress { get; set; }
@@ -23,5 +23,9 @@ namespace PersonnelShiftSystem.Domain.Models
         public DateTime? UpdatedDate { get; set; }
 
         public Role Role { get; set; }
-    }
+		public ICollection<PersonnelTeam> PersonnelTeam { get; set; }
+		public ICollection<ErrorLog> ErrorLog { get; set; }
+
+
+	}
 }

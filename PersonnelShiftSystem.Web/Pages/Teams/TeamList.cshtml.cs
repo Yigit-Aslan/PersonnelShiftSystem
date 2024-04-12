@@ -10,7 +10,7 @@ namespace PersonnelShiftSystem.Web.Pages.Teams
     {
         private IBaseModel baseModel;
 
-        List<TeamViewModel> TeamModel { get; set; }
+        public List<TeamViewModel> TeamModel { get; set; }
 
         public TeamListModel(IBaseModel _baseModel)
         {
@@ -31,10 +31,15 @@ namespace PersonnelShiftSystem.Web.Pages.Teams
             TeamModel.ForEach(x =>
             {
                 var createdUser = siteUsers.First(c=>c.Id == x.CreatedBy); x.CreatedName = $"{createdUser.Name} {createdUser.Surname}";
-                var updatedUser = siteUsers.First(c => c.Id == x.UpdatedBy); x.UpdatedName = $"{updatedUser.Name} {updatedUser.Surname}";
+                var updatedUser = siteUsers.FirstOrDefault(c => c.Id == x.UpdatedBy); x.UpdatedName = (updatedUser == null) ? string.Empty : $"{updatedUser.Name} {updatedUser.Surname}";
                 var getLeadInfo = getTeamMembers.First(c=>c.TeamId == x.Id && c.IsTeamLeader == baseModel.ItemActive() && c.IsActive == baseModel.ItemActive());
                 var getLead = siteUsers.First(c => c.Id == getLeadInfo.UserId && x.IsActive == baseModel.ItemActive()); x.TeamLead = $"{getLead.Name} {getLead.Surname}";
             });
+        }
+
+        public IActionResult OnPostAddTeam()
+        {
+            return RedirectToPage("TeamAdd");
         }
     }
 }

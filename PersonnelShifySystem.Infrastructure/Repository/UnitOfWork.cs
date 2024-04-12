@@ -1,4 +1,5 @@
-﻿using PersonnelShiftSystem.Domain.Interfaces;
+﻿using Microsoft.EntityFrameworkCore.Storage;
+using PersonnelShiftSystem.Domain.Interfaces;
 using PersonnelShiftSystem.Domain.Models;
 using System;
 using System.Collections.Generic;
@@ -12,6 +13,7 @@ namespace PersonnelShiftSystem.Infrastructure.Repository
     public class UnitOfWork : IUnitOfWork
     {
         private PersonnelContext _context;
+        private IDbContextTransaction _transaction;
         private Repository<Siteuser> _siteUserRepository;
         private Repository<Role> _roleRepository;
         private Repository<Team> _teamRepository;
@@ -41,27 +43,35 @@ namespace PersonnelShiftSystem.Infrastructure.Repository
             return new Repository<T>(_context);
         }
 
+        public async Task BeginTransactionAsync()
+        {
+            _transaction = await _context.Database.BeginTransactionAsync();
+        }
+
+        public void CommitTransaction()
+        {
+            _transaction?.Commit();
+        }
+
+        public void RollbackTransaction()
+        {
+            _transaction?.Rollback();
+        }
 
         public async Task<int> SaveChangesAsync()
         {
             int result = -1;
 
-            using (var transaction = new TransactionScope(TransactionScopeOption.Required, TransactionScopeAsyncFlowOption.Enabled))
+            try
             {
-                try
-                {
-                    if (_context == null)
-                        throw new ArgumentException("Context is null");
+                if (_context == null)
+                    throw new ArgumentException("Context is null");
 
-                    result = await _context.SaveChangesAsync();
-                    transaction.Complete();
-                }
-                catch (Exception ex)
-                {
-                    var foo = ex.Message;
-
-                    transaction.Dispose();
-                }
+                result = await _context.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+                var foo = ex.Message;
             }
 
             return result;
@@ -69,7 +79,7 @@ namespace PersonnelShiftSystem.Infrastructure.Repository
 
         public async Task RollbackAsync()
         {
-            await Task.CompletedTask; 
+            await Task.CompletedTask;
             _context.Dispose();
         }
 

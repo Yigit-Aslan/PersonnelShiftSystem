@@ -82,3 +82,4 @@ C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShiftSystem.W
 C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShiftSystem.Web\obj\Debug\net7.0\PersonnelShiftSystem.Web.pdb
 C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShiftSystem.Web\obj\Debug\net7.0\PersonnelShiftSystem.Web.genruntimeconfig.cache
 C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShiftSystem.Web\obj\Debug\net7.0\ref\PersonnelShiftSystem.Web.dll
+C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShiftSystem.Web\bin\Debug\net7.0\Newtonsoft.Json.dll

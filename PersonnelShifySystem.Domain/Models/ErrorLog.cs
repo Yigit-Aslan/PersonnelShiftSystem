@@ -14,5 +14,7 @@ namespace PersonnelShiftSystem.Domain.Models
         public string ExMessage { get; set; }
         public DateTime CreatedDate { get; set; }
         public string Path { get; set; }
+
+        public Siteuser User { get; set; }
     }
 }

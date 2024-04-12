@@ -30,6 +30,7 @@ builder.Services.AddCors();
 builder.Services.AddDetection();
 builder.Services.AddAntiforgery(x => x.HeaderName = "XSRF-TOKEN");
 builder.Services.AddScoped<PersonnelShiftSystem.Application.Services.LoginService>();
+builder.Services.AddScoped<PersonnelShiftSystem.Application.Services.TeamService>();
 builder.Services.AddScoped<ExceptionHandlers>();
 
 builder.Services.AddSession(options =>

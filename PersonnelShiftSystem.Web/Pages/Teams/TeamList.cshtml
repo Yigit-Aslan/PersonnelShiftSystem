@@ -56,20 +56,10 @@
             <!--begin::Card toolbar-->
             <div class="card-toolbar flex-row-fluid justify-content-end gap-5">
                 <div class="w-100 mw-150px">
-                    <!--begin::Select2-->
-                    @* 					<select class="form-select form-select-solid select2-hidden-accessible" data-control="select2" data-hide-search="true" data-placeholder="Status" data-kt-ecommerce-product-filter="status" data-select2-id="select2-data-12-sd2g" tabindex="-1" aria-hidden="true" data-kt-initialized="1">
-                    <option data-select2-id="select2-data-14-dl0b"></option>
-                    <option value="all">All</option>
-                    <option value="published">Published</option>
-                    <option value="scheduled">Scheduled</option>
-                    <option value="inactive">Inactive</option>
-                    </select>
-                    <span class="select2 select2-container select2-container--bootstrap5" dir="ltr" data-select2-id="select2-data-13-njlv" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single form-select form-select-solid" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-9m2y-container" aria-controls="select2-9m2y-container"><span class="select2-selection__rendered" id="select2-9m2y-container" role="textbox" aria-readonly="true" title="Status"><span class="select2-selection__placeholder">Status</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span> *@
-                    <!--end::Select2-->
                 </div>
                 <!--begin::Add product-->
                 <form method="post">
-                    <input type="submit" class="btn btn-primary" value="Kullanıcı Ekle" asp-page="TeamList" asp-page-handler="AddTeam">
+                    <input type="submit" class="btn btn-primary" value="Takım Oluştur" asp-page="TeamList" asp-page-handler="AddTeam">
                 </form>
                 <!--end::Add product-->
             </div>
@@ -100,7 +90,7 @@
                         </thead>
                         <tbody class="fw-semibold text-gray-600">
 
-                            @foreach (var user in Model.us)
+                            @foreach (var user in Model.TeamModel)
                             {
                                 <tr>
                                     @* 										<td>
@@ -110,11 +100,12 @@
                                 </td> *@
                                     <!--FOTO-->
 
-                                    <td>@user.NameSurname</td>
+                                    <td>@user.TeamName</td>
+                                    <td>@user.TeamLead</td>
                                     <td>@user.CreatedName</td>
                                     <td>@user.CreatedDate.ToString("dd.mm.yyyy")</td>
                                     <td>@user.UpdatedName</td>
-                                    <td>@user.UpdatedDate.ToString("dd.mm.yyyy")</td>
+                                    <td>@user.UpdatedDate</td>
 
                                     <!--Actions-->
                                     <td>

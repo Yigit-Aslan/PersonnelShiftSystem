@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PersonnelShiftSystem.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e48444e9b4f469f4321e40cb293ca4dbba850409")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1fd975fe0e04bc631e49bff5fc7cc1145cfd3f21")]
 [assembly: System.Reflection.AssemblyProductAttribute("PersonnelShiftSystem.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PersonnelShiftSystem.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

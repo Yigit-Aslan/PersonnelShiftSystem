@@ -19,6 +19,9 @@ namespace PersonnelShiftSystem.Domain.Interfaces
         IRepository<ErrorLog> ErrorLogRepository { get; }
         IRepository<UserLoginHistory> UserLoginHistoryRepository { get; }
 
+        Task BeginTransactionAsync();
+        public void CommitTransaction();
+        public void RollbackTransaction();
 
         Task<int> SaveChangesAsync();
         Task RollbackAsync();

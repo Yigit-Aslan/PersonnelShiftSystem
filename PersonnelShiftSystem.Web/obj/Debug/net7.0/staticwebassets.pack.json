@@ -45,6 +45,10 @@
       "PackagePath": "staticwebassets\\assets\\js\\Pages\\SubCategory.js"
     },
     {
+      "Id": "C:\\Users\\DorGoetzer\\Documents\\GitHub\\PersonnelShiftSystem\\PersonnelShiftSystem.Web\\wwwroot\\assets\\js\\Pages\\TeamJs\\Team.js",
+      "PackagePath": "staticwebassets\\assets\\js\\Pages\\TeamJs\\Team.js"
+    },
+    {
       "Id": "C:\\Users\\DorGoetzer\\Documents\\GitHub\\PersonnelShiftSystem\\PersonnelShiftSystem.Web\\wwwroot\\assets\\js\\Pages\\Users.js",
       "PackagePath": "staticwebassets\\assets\\js\\Pages\\Users.js"
     },

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "5oxNwH1bua9GlOGxzF9R7PSVO+JYdY+i60I4cUQjrqfy3HRfD4lbOIVYMcAnc1+y6nFQz5oB9fRvvXyYW013vg==",
+  "dgSpecHash": "Bt2lsxM6RO1bP/l7xkyxfdtvdh3IpJCr+qwjvJF4QHG9Y74tOCOEnrzMDSz+bpm2VeDT4xWf3Bu+GRkRI5q8Kg==",
   "success": true,
   "projectFilePath": "C:\\Users\\DorGoetzer\\Documents\\GitHub\\PersonnelShiftSystem\\PersonnelShiftSystem.Web\\PersonnelShiftSystem.Web.csproj",
   "expectedPackageFiles": [
@@ -59,6 +59,7 @@
     "C:\\Users\\DorGoetzer\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
     "C:\\Users\\DorGoetzer\\.nuget\\packages\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
     "C:\\Users\\DorGoetzer\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+    "C:\\Users\\DorGoetzer\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\DorGoetzer\\.nuget\\packages\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
     "C:\\Users\\DorGoetzer\\.nuget\\packages\\system.configuration.configurationmanager\\6.0.1\\system.configuration.configurationmanager.6.0.1.nupkg.sha512",
     "C:\\Users\\DorGoetzer\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.1\\system.diagnostics.diagnosticsource.6.0.1.nupkg.sha512",

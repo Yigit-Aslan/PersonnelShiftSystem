@@ -13,6 +13,6 @@ namespace PersonnelShiftSystem.Domain.Models
 
 
 
-        public ICollection<Siteuser> Siteusers { get; set; }
+        public ICollection<Siteuser> Siteuser { get; set; }
     }
 }

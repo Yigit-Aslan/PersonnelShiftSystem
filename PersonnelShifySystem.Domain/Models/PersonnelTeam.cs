@@ -17,5 +17,9 @@ namespace PersonnelShiftSystem.Domain.Models
         public DateTime CreatedDate { get; set; }
         public int? UpdatedBy { get; set; }
         public DateTime? UpdatedDate { get; set; }
+
+
+        public Team Team { get; set; }
+        public Siteuser User { get; set; }
     }
 }
