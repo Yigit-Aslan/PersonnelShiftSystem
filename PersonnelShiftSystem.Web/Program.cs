@@ -5,6 +5,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
 using PersonnelShiftSystem.Application.Exceptions;
 using PersonnelShiftSystem.Infrastructure.Repository;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 IConfiguration configuration = builder.Configuration;
@@ -32,7 +33,11 @@ builder.Services.AddAntiforgery(x => x.HeaderName = "XSRF-TOKEN");
 builder.Services.AddScoped<PersonnelShiftSystem.Application.Services.LoginService>();
 builder.Services.AddScoped<PersonnelShiftSystem.Application.Services.TeamService>();
 builder.Services.AddScoped<ExceptionHandlers>();
-
+builder.Services.AddControllers().AddJsonOptions(options =>
+{
+    options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
+    options.JsonSerializerOptions.WriteIndented = true;
+});
 builder.Services.AddSession(options =>
 {
     //Configure session options

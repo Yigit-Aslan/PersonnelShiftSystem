@@ -12,7 +12,7 @@ $(document).ready(postData.addEventListener('click', async function (event) {
 
 
 
-    var action = $('#postTeamForm').attr('action');
+    var action = $('#postEditTeamForm').attr('action');
 
 
     var result = await $.ajax({
@@ -46,23 +46,22 @@ $(document).ready(postData.addEventListener('click', async function (event) {
         });
     }
 }));
-
 $(document).ready(function () {
     $('#TeamLeadId').change(function () {
         var antiForgeryToken = document.querySelector('input[name="__RequestVerificationToken"]').value;
+        var pageId = document.getElementById('postEditTeamForm').getAttribute('data-id');
         var headers = new Headers({
             'RequestVerificationToken': antiForgeryToken
         });
         var selectedValue = $(this).val();
         $.ajax({
             type: 'GET',
-            url: '/Teams/TeamAdd?handler=FilterPersonnel&teamLeadId=' + selectedValue,
-            dataType: 'json',
-            contentType: 'application/json; charset=utf-8',
-            headers: headers,
-            success: function (response) {
+            url: '/Teams/TeamEdit/' + pageId + '?handler=FilterPersonnel&teamLeadId=' + selectedValue,
+            beforeSend: function (xhr) {
+                xhr.setRequestHeader('RequestVerificationToken', antiForgeryToken);
+            },            success: function (response) {
                 if (response.result === "Success") {
-                    updatePersonnelDropdown(response.personnelModel);
+                    updateEditPersonnelDropdown(response.personnelModel);
                     console.log(response.result);
                 }
             },
@@ -74,7 +73,7 @@ $(document).ready(function () {
     });
 });
 
-function updatePersonnelDropdown(personnelModel) {
+function updateEditPersonnelDropdown(personnelModel) {
     var $personnelDropdown = $('#PersonnelIds'); // Subcategory dropdown'ının ID'si
     $personnelDropdown.empty(); // Mevcut option'ları temizleyin
     // Yeni option'ları ekleyin

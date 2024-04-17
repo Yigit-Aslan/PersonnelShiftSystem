@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "sRZUG/b5YF4T1pOs+Nr+CFJz1Rr0uww+RgzKpORRZ0U=",
+  "Hash": "MzINgqTcdK4dDH+IOe3JJ/iheH3jO9E6EmVn2Riak1w=",
   "Source": "PersonnelShiftSystem.Web",
   "BasePath": "_content/PersonnelShiftSystem.Web",
   "Mode": "Default",
@@ -2808,6 +2808,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\js\\Pages\\TeamJs\\Team.js"
+    },
+    {
+      "Identity": "C:\\Users\\DorGoetzer\\Documents\\GitHub\\PersonnelShiftSystem\\PersonnelShiftSystem.Web\\wwwroot\\assets\\js\\Pages\\TeamJs\\TeamEdit.js",
+      "SourceId": "PersonnelShiftSystem.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\DorGoetzer\\Documents\\GitHub\\PersonnelShiftSystem\\PersonnelShiftSystem.Web\\wwwroot\\",
+      "BasePath": "_content/PersonnelShiftSystem.Web",
+      "RelativePath": "assets/js/Pages/TeamJs/TeamEdit.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\js\\Pages\\TeamJs\\TeamEdit.js"
     },
     {
       "Identity": "C:\\Users\\DorGoetzer\\Documents\\GitHub\\PersonnelShiftSystem\\PersonnelShiftSystem.Web\\wwwroot\\assets\\js\\Pages\\Users.js",

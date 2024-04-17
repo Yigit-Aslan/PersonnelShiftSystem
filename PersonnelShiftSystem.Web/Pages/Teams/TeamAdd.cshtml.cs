@@ -3,16 +3,9 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using PersonnelShiftSystem.Application.Dtos;
 using PersonnelShiftSystem.Domain.Interfaces;
 using PersonnelShiftSystem.Application.Services;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
-using PersonnelShiftSystem.Application.ViewModels.TeamView;
-using PersonnelShiftSystem.Application.ViewModels.UserView;
 using PersonnelShiftSystem.Domain.Models;
-using Microsoft.AspNetCore.Http;
 using Newtonsoft.Json;
-using JetBrains.Annotations;
-using System.Text.Json.Serialization;
 using Newtonsoft.Json.Linq;
-
 namespace PersonnelShiftSystem.Web.Pages.Teams
 {
     public class TeamAddModel : PageModel
@@ -45,7 +38,7 @@ namespace PersonnelShiftSystem.Web.Pages.Teams
 
         private async void LoadInitials()
         {
-            LeadUserModel = (await baseModel.BaseUnitOfWork.SiteUserRepository.QueryAsync(x=>x.IsActive == baseModel.ItemActive())).ToList();
+            LeadUserModel = (await baseModel.BaseUnitOfWork.SiteUserRepository.QueryAsync(x => x.IsActive == baseModel.ItemActive())).ToList();
             PersonnelUserModel = (await baseModel.BaseUnitOfWork.SiteUserRepository.QueryAsync(x => x.IsActive == baseModel.ItemActive())).ToList();
 
             var getPersonnelTeam = (await baseModel.BaseUnitOfWork.PersonnelTeamRepository.QueryAsync(x => x.IsActive == baseModel.ItemActive())).ToList();
@@ -55,15 +48,29 @@ namespace PersonnelShiftSystem.Web.Pages.Teams
 
         }
 
+        public async Task<IActionResult> OnGetFilterPersonnel(int teamLeadId)
+        {
+            List<Siteuser> PersonnelModel = new List<Siteuser>();
+
+            PersonnelModel = (await baseModel.BaseUnitOfWork.SiteUserRepository.QueryAsync(x => x.IsActive == baseModel.ItemActive())).ToList();
+            var getPersonnelTeam = (await baseModel.BaseUnitOfWork.PersonnelTeamRepository.QueryAsync(x => x.IsActive == baseModel.ItemActive())).ToList();
+            var getUserIds = getPersonnelTeam.Select(x => x.UserId).Distinct().ToList();
+
+            PersonnelModel = PersonnelModel.Where(x => !getUserIds.Contains(x.Id)).ToList();
+
+            PersonnelModel.RemoveAll(x => x.Id == teamLeadId);
+
+            return new JsonResult(new { Result = "Success", PersonnelModel = PersonnelModel });
+        }
         public async Task<IActionResult> OnPostAddTeam()
         {
 
-			if (ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 var rData = HttpContext.Request.Form;
                 var personnelIds = rData["PersonnelIds"];
                 var teamLeadId = rData["TeamLeadId"];
-                                PersonnelModel = new List<PersonnelTeamDto>();
+                PersonnelModel = new List<PersonnelTeamDto>();
 
 
                 PersonnelTeamModel = new PersonnelTeamDto()
@@ -73,10 +80,10 @@ namespace PersonnelShiftSystem.Web.Pages.Teams
                     IsActive = baseModel.ItemActive(),
                     CreatedBy = Convert.ToInt32(baseModel.ReadFromSession("UserId")),
                     CreatedDate = DateTime.Now,
-                    
+
                 };
                 PersonnelModel.Add(PersonnelTeamModel);
-                foreach ( var personnelId in personnelIds )
+                foreach (var personnelId in personnelIds)
                 {
                     PersonnelTeamModel = new PersonnelTeamDto()
                     {
@@ -92,8 +99,8 @@ namespace PersonnelShiftSystem.Web.Pages.Teams
                 }
                 var loginResult = await teamService.AddTeamAsync(TeamModel, PersonnelModel);
 
-				if (loginResult is OkObjectResult okResult)
-				{
+                if (loginResult is OkObjectResult okResult)
+                {
                     var dataString = okResult.Value.ToString();
                     var data = JObject.Parse(dataString);
                     var isSuccess = (bool)data["isSuccess"];
@@ -102,8 +109,8 @@ namespace PersonnelShiftSystem.Web.Pages.Teams
 
                     return new JsonResult(new { isSuccess, message, url });
                 }
-				else if (loginResult is BadRequestObjectResult badRequestResult)
-				{
+                else if (loginResult is BadRequestObjectResult badRequestResult)
+                {
                     var dataString = JsonConvert.SerializeObject(badRequestResult.Value);
                     var data = JObject.Parse(dataString);
                     var isSuccess = (bool)data["isSuccess"];
@@ -113,14 +120,19 @@ namespace PersonnelShiftSystem.Web.Pages.Teams
 
                 }
 
-			}
+            }
             else
             {
-				return new JsonResult(new { isSuccess = false, message = "Eksik alanları doldurunuz" });
-			}
+                return new JsonResult(new { isSuccess = false, message = "Eksik alanları doldurunuz" });
+            }
 
             return new JsonResult(new { isSuccess = false });
 
+        }
+
+        public async Task<IActionResult> OnPostCancel()
+        {
+            return RedirectToPage("TeamList");
         }
     }
 }
