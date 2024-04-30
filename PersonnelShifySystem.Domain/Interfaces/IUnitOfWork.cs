@@ -15,7 +15,7 @@ namespace PersonnelShiftSystem.Domain.Interfaces
         IRepository<Team> TeamRepository { get; }
         IRepository<PersonnelTeam> PersonnelTeamRepository { get; }
         IRepository<Shift> ShiftRepository { get; }
-        IRepository<AssignTeamShift> AssignTeamShiftRepository { get; }
+        IRepository<AssignShiftTeam> AssignShiftTeamRepository { get; }
         IRepository<ErrorLog> ErrorLogRepository { get; }
         IRepository<UserLoginHistory> UserLoginHistoryRepository { get; }
 

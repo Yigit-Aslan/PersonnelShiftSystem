@@ -8,9 +8,12 @@ using PersonnelShiftSystem.Domain.Interfaces;
 using PersonnelShiftSystem.Domain.Models;
 using Wangkanai.Extensions;
 using PersonnelShiftSystem.Application.Exceptions;
+using Microsoft.AspNetCore.Authorization;
 
 namespace PersonnelShiftSystem.Web.Pages.Teams
 {
+    [Authorize(Roles = "Admin")]
+
     public class TeamEditModel : PageModel
     {
         private IBaseModel baseModel;
@@ -54,7 +57,7 @@ namespace PersonnelShiftSystem.Web.Pages.Teams
             var getPersonnelTeam = (await baseModel.BaseUnitOfWork.PersonnelTeamRepository.QueryAsync(x => x.IsActive == baseModel.ItemActive())).ToList();
             var getUserIds = getPersonnelTeam.Select(u => u.UserId).ToHashSet();
             LeadUserModel = LeadUserModel.Where(u => !getUserIds.Contains(u.Id)).ToList();
-            PersonnelUserModel = LeadUserModel.Where(u => !getUserIds.Contains(u.Id)).ToList();
+            PersonnelUserModel = PersonnelUserModel.Where(u => !getUserIds.Contains(u.Id)).ToList();
 
             TeamLeadId = getPersonnelTeam.First(x => x.IsTeamLeader == baseModel.ItemActive() && x.TeamId == Id).UserId;
             var getLeadData = await baseModel.BaseUnitOfWork.SiteUserRepository.GetFirstOrDefaultAsync(x => x.Id == TeamLeadId && x.IsActive == baseModel.ItemActive());
@@ -125,7 +128,7 @@ namespace PersonnelShiftSystem.Web.Pages.Teams
                 if (ModelState.IsValid)
                 {
                     var rData = HttpContext.Request.Form;
-                    var personnelIds = rData["PersonnelIds"];
+                    var personnelIds = rData["PersonnelIds[]"].ToList();
                     var teamLeadId = rData["TeamLeadId"];
                     PersonnelModel = new List<PersonnelTeamDto>();
 
@@ -157,11 +160,11 @@ namespace PersonnelShiftSystem.Web.Pages.Teams
 
                     }
                     TeamModel.Id = Id;
-                    var loginResult = await teamService.AddTeamAsync(TeamModel, PersonnelModel);
+                    var result = await teamService.EditTeamAsync(TeamModel, PersonnelModel, Id);
 
-                    if (loginResult is OkObjectResult okResult)
+                    if (result is OkObjectResult okResult)
                     {
-                        var dataString = okResult.Value.ToString();
+                        var dataString = JsonConvert.SerializeObject(okResult.Value);
                         var data = JObject.Parse(dataString);
                         var isSuccess = (bool)data["isSuccess"];
                         var message = (string)data["message"];
@@ -169,7 +172,7 @@ namespace PersonnelShiftSystem.Web.Pages.Teams
 
                         return new JsonResult(new { isSuccess, message, url });
                     }
-                    else if (loginResult is BadRequestObjectResult badRequestResult)
+                    else if (result is BadRequestObjectResult badRequestResult)
                     {
                         var dataString = JsonConvert.SerializeObject(badRequestResult.Value);
                         var data = JObject.Parse(dataString);
@@ -183,6 +186,8 @@ namespace PersonnelShiftSystem.Web.Pages.Teams
                 }
                 else
                 {
+                    ModelState.Clear();
+
                     return new JsonResult(new { isSuccess = false, message = "Eksik alanları doldurunuz" });
                 }
             }
@@ -193,6 +198,10 @@ namespace PersonnelShiftSystem.Web.Pages.Teams
             }
             return new JsonResult(new { isSuccess = false});
 
+        }
+        public async Task<IActionResult> OnPostCancel()
+        {
+            return RedirectToPage("TeamList");
         }
     }
 }

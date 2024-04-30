@@ -8,8 +8,14 @@ $(document).ready(postData.addEventListener('click', async function (event) {
     // Diğer form verilerini de FormData'ya ekleyebilirsiniz
     formData.append("TeamName", document.getElementById("TeamName").value);
     formData.append("TeamLeadId", document.getElementById("TeamLeadId").value);
-    formData.append("PersonnelIds", document.getElementById("PersonnelIds").value);
+    var selectElement = document.getElementById("PersonnelIds");
+    var options = selectElement && selectElement.options;
 
+    for (var i = 0; i < options.length; i++) {
+        if (options[i].selected) {
+            formData.append("PersonnelIds[]", options[i].value);
+        }
+    }
 
 
     var action = $('#postEditTeamForm').attr('action');
@@ -29,8 +35,8 @@ $(document).ready(postData.addEventListener('click', async function (event) {
     });
     if (result.isSuccess) {
         await Swal.fire({
-            title: result.title,
-            text: result.title,
+            title: "Düzenleme Başarılı",
+            text: result.message,
             icon: "success"
         }).then(function () {
             window.location.href = result.url;
@@ -38,7 +44,7 @@ $(document).ready(postData.addEventListener('click', async function (event) {
     }
     else {
         await Swal.fire({
-            title: result.title,
+            title: "Düzenleme Başarısız",
             text: result.message,
             icon: "warning"
         }).then(function () {

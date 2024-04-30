@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PersonnelShiftSystem.Infrastructure.Repository
 {
-    public class ShiftRepository : Repository<PersonnelTeam>
+    public class ShiftRepository : Repository<Shift>
     {
         private readonly PersonnelContext _context;
 

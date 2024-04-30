@@ -18,7 +18,7 @@ namespace PersonnelShiftSystem.Domain.Models
 
 
 		public ICollection<PersonnelTeam> PersonnelTeam { get; set; }
-		public ICollection<AssignTeamShift> AssignTeamShift { get; set; }
+		public ICollection<AssignShiftTeam> AssignTeamShift { get; set; }
 
 	}
 }

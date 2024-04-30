@@ -1,0 +1,117 @@
+﻿@page "{Id:int}"
+@model PersonnelShiftSystem.Web.Pages.Shifts.ShiftEditModel
+@{
+    ViewData["Title"] = "Vardiya Düzenle";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<div id="kt_app_toolbar" class="app-toolbar align-items-center justify-content-between py-4 py-lg-6">
+    <!--begin::Toolbar wrapper-->
+    <div class="d-flex flex-grow-1 flex-stack flex-wrap gap-2" id="kt_toolbar">
+        <!--begin::Page title-->
+        <div class="d-flex flex-column align-items-start me-3 gap-1 gap-lg-2">
+            <!--begin::Title-->
+            <h1 class="d-flex text-gray-900 fw-bold m-0 fs-3">Vardiya Düzenle</h1>
+            <!--end::Title-->
+            <!--begin::Breadcrumb-->
+            <ul class="breadcrumb breadcrumb-dot fw-semibold text-gray-600 fs-7">
+                <!--begin::Item-->
+                <li class="breadcrumb-item text-gray-600">
+                    <a href="/Dashboard" class="text-gray-600 text-hover-primary">Anasayfa</a>
+                </li>
+                <!--end::Item-->
+                <!--begin::Item-->
+                <li class="breadcrumb-item text-gray-600">Vardiyaları Listele</li>
+                <li class="breadcrumb-item text-gray-600">Vardiya Düzenle</li>
+
+                <!--end::Item-->
+            </ul>
+            <!--end::Breadcrumb-->
+        </div>
+        <!--end::Page title-->
+    </div>
+    <!--end::Toolbar wrapper-->
+</div>
+<!--end::Toolbar-->
+
+
+<div id="kt_app_content" class="app-content flex-column-fluid">
+    <!--begin::Form-->
+    <form method="post" id="postShiftEditForm" action="/Shifts/ShiftEdit/@Model.Id?handler=EditShift">
+        @Html.AntiForgeryToken()
+
+        <!--begin::Input group-->
+        <div class="form-group">
+
+            <div class="form-group mb-10">
+                <label class="required ">Vardiya Adı</label>
+                <input type="text" class="form-control" id="ShiftName" name="ShiftName" placeholder="Vardiya Adı Giriniz." asp-for="@Model.ShiftModel.ShiftName" />
+            </div>
+            <!--end::Input group-->
+            <!--begin::Input group-->
+            <div class="form-group mb-10">
+                <label for="baslangicTarihi">Vardiya Başlangıç Tarihi</label>
+                <input id="StartingDate" name="StartingDate" class="form-control" value="@Model.ShiftModel.StartingDate" asp-for="@Model.ShiftModel.StartingDate" />
+            </div>
+
+            <div class="form-group mb-10">
+                <label for="bitisTarihi">Vardiya Başlangıç Tarihi</label>
+                <input id="EndingDate" name="EndingDate" class="form-control" value="@Model.ShiftModel.EndingDate" asp-for="@Model.ShiftModel.EndingDate" />
+            </div>
+
+            <div class="form-group mb-10">
+                <label for="baslangicSaati">Vardiya Başlangıç Saati</label>
+                <input id="ShiftStart" name="ShiftStart" class="form-control" value="@Model.ShiftModel.ShiftStart" asp-for="@Model.ShiftModel.ShiftStart" />
+            </div>
+
+            <div class="form-group mb-10">
+                <label for="bitisSaati">Vardiya Bitiş Saati</label>
+                <input id="ShiftEnd" name="ShiftEnd" class="form-control" value="@Model.ShiftModel.ShiftEnd" asp-for="@Model.ShiftModel.ShiftEnd" />
+            </div>
+
+        </div>
+
+        <div class="kt-portlet__foot">
+            <div class="kt-form__actions">
+                <button type="submit" id="postShiftEdit" class="btn btn-primary">Ekle</button>
+                <button type="submit" class="btn btn-secondary" asp-page-handler="Cancel">İptal Et</button>
+            </div>
+        </div>
+
+
+    </form>
+    <!--end::Form-->
+</div>
+
+@section Scripts {
+
+    <script>
+        $(document).ready(function () {
+            kendo.culture("tr-TR");
+
+            $("#StartingDate").kendoDatePicker({
+                format: "dd.MM.yyyy", // Tarih biçimini Türkçe olarak ayarlar
+                culture: "tr-TR" // Kültürü Türkçe olarak ayarlar
+            });
+            $("#EndingDate").kendoDatePicker({
+                format: "dd.MM.yyyy", // Tarih biçimini Türkçe olarak ayarlar
+                culture: "tr-TR" // Kültürü Türkçe olarak ayarlar
+            });
+        });
+
+        $(document).ready(function () {
+            kendo.culture("tr-TR");
+
+            $("#ShiftStart").kendoTimePicker({
+                format: "HH:mm" // Saat biçimini 24 saatlik formata ayarlar
+
+            });
+            $("#ShiftEnd").kendoTimePicker({
+                format: "HH:mm" // Saat biçimini 24 saatlik formata ayarlar
+
+            });
+        });
+
+    </script>
+    <script src="~/assets/js/Pages/ShiftJs/ShiftEdit.js"></script>
+}

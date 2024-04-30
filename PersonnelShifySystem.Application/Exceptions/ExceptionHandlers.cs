@@ -86,35 +86,6 @@ namespace PersonnelShiftSystem.Application.Exceptions
             return true;
         }
 
-        //public string AddressValidation(AddressViewModel AddressModel)
-        //{
-        //    #region |Check Model Field|
-        //    if (AddressModel.AddressTitle.IsNullOrEmpty())
-        //        return ExceptionMessageHelper.CannotEmptyField("Adres Başlığı");
-        //    if (AddressModel.AddressDetails.IsNullOrEmpty())
-        //        return ExceptionMessageHelper.CannotEmptyField("Adres Detayı");
-        //    if (AddressModel.CountryId == 0 || AddressModel.CountryId < 0)
-        //        return ExceptionMessageHelper.CannotEmptyField("Ülke");
-        //    if (AddressModel.ProvinceId == 0 || AddressModel.ProvinceId < 0)
-        //        return ExceptionMessageHelper.CannotEmptyField("İl");
-        //    if (AddressModel.DistrictId == 0 || AddressModel.DistrictId < 0)
-        //        return ExceptionMessageHelper.CannotEmptyField("İlçe");
-        //    if (AddressModel.PostCode.IsNullOrEmpty())
-        //        return ExceptionMessageHelper.CannotEmptyField("Posta Kodu");
-
-        //    #endregion
-
-        //    #region |Size Control|
-        //    if (AddressModel.AddressTitle.Length > 32)
-        //        return ExceptionMessageHelper.LengthError("Adres Başlığı");
-        //    if (AddressModel.AddressDetails.Length > 16777215)
-        //        return ExceptionMessageHelper.LengthError("Adres Detayı");
-        //    if (AddressModel.PostCode.Length > 5)
-        //        return ExceptionMessageHelper.LengthError("Posta Kodu");
-
-
-        //    #endregion
-        //    return string.Empty;
-        //}
+       
     }
 }

@@ -1,0 +1,109 @@
+﻿@page "{Id:int}"
+@model PersonnelShiftSystem.Web.Pages.Users.UserEditModel
+@{
+    ViewData["Title"] = "Personel Düzenle";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<div id="kt_app_toolbar" class="app-toolbar align-items-center justify-content-between py-4 py-lg-6">
+    <!--begin::Toolbar wrapper-->
+    <div class="d-flex flex-grow-1 flex-stack flex-wrap gap-2" id="kt_toolbar">
+        <!--begin::Page title-->
+        <div class="d-flex flex-column align-items-start me-3 gap-1 gap-lg-2">
+            <!--begin::Title-->
+            <h1 class="d-flex text-gray-900 fw-bold m-0 fs-3">Personel Oluştur</h1>
+            <!--end::Title-->
+            <!--begin::Breadcrumb-->
+            <ul class="breadcrumb breadcrumb-dot fw-semibold text-gray-600 fs-7">
+                <!--begin::Item-->
+                <li class="breadcrumb-item text-gray-600">
+                    <a href="/Dashboard" class="text-gray-600 text-hover-primary">Anasayfa</a>
+                </li>
+                <!--end::Item-->
+                <!--begin::Item-->
+                <li class="breadcrumb-item text-gray-600">Personelleri Listele</li>
+                <li class="breadcrumb-item text-gray-600">Personel Oluştur</li>
+
+                <!--end::Item-->
+            </ul>
+            <!--end::Breadcrumb-->
+        </div>
+        <!--end::Page title-->
+    </div>
+    <!--end::Toolbar wrapper-->
+</div>
+<!--end::Toolbar-->
+
+
+<div id="kt_app_content" class="app-content flex-column-fluid">
+    <!--begin::Form-->
+    <form method="post" id="postUserEditForm" action="/Users/UserAdd/@Model.Id?handler=AddUser">
+        @Html.AntiForgeryToken()
+
+        <!--begin::Input group-->
+        <div class="form-group">
+
+            <div class="form-group mb-10">
+                <label class="required ">Personel Adı</label>
+                <input type="text" class="form-control" id="Name" name="Name" placeholder="Ad Giriniz." value="@Model.UserModel.Name" asp-for="@Model.UserModel.Name" />
+            </div>
+
+            <div class="form-group mb-10">
+                <label class="required ">Personel Soyadı</label>
+                <input type="text" class="form-control" id="Surname" name="Surname" placeholder="Soyad Giriniz." value="@Model.UserModel.Surname" asp-for="@Model.UserModel.Surname" />
+            </div>
+
+            <div class="form-group mb-10">
+                <label class="required ">Telefon Numarası</label>
+                <input type="text" class="form-control" id="PhoneNumber" name="PhoneNumber" placeholder="Telefon Numarası Giriniz." value="@Model.UserModel.PhoneNumber" asp-for="@Model.UserModel.PhoneNumber" />
+            </div>
+
+            <div class="form-group mb-10">
+                <label class="required ">Mail Adresi</label>
+                <input type="text" class="form-control" id="MailAddress" name="MailAddress" placeholder="Mail Adresi Giriniz." value="@Model.UserModel.MailAddress" asp-for="@Model.UserModel.MailAddress" />
+            </div>
+
+            <div class="form-group mb-10">
+                <label class="required ">Şifre</label>
+                <input type="text" class="form-control" id="Password" name="Password" placeholder="Şifre Giriniz." value="@Model.UserModel.Password" asp-for="@Model.UserModel.Password" />
+            </div>
+
+            <div class="form-group mb-10">
+                <label class="required ">Tekrar Şifre</label>
+                <input type="text" class="form-control" id="PasswordAgain" name="PasswordAgain" placeholder="Tekrar Şifre Giriniz." />
+            </div>
+
+
+            <div class="form-group mb-10">
+                <label class="required">Rol</label>
+                <select class="form-select" id="RoleId" name="RoleId" asp-for="@Model.UserModel.RoleId" aria-label="Floating label select example">
+                    <option selected value="0">Lütfen Seçim Yapınız</option>
+                    @foreach (var item in Model.RoleModel)
+                    {
+                        if (@Model.UserModel.RoleId == item.Id)
+                        {
+                            <option value="@item.Id">@item.RoleName</option>
+
+                        }
+
+                    }
+                </select>
+            </div>
+
+        </div>
+
+        <div class="kt-portlet__foot">
+            <div class="kt-form__actions">
+                <button type="submit" id="postUserEdit" class="btn btn-primary">Düzenle</button>
+                <button type="submit" class="btn btn-secondary" asp-page-handler="Cancel">İptal Et</button>
+            </div>
+        </div>
+
+
+    </form>
+    <!--end::Form-->
+</div>
+
+@section Scripts {
+    <script src="~/assets/js/Pages/UserJs/UserEdit.js"></script>
+}

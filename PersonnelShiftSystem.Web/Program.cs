@@ -5,6 +5,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
 using PersonnelShiftSystem.Application.Exceptions;
 using PersonnelShiftSystem.Infrastructure.Repository;
+using System;
 using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -16,7 +17,8 @@ builder.Services.AddHttpContextAccessor();
 builder.Services.AddMvc();
 builder.Services.AddScoped<PersonnelShiftSystem.Domain.Interfaces.IBaseModel, BaseModel>();
 builder.Services.AddScoped<PersonnelShiftSystem.Domain.Interfaces.IUnitOfWork, UnitOfWork>();
-builder.Services.AddDbContext<PersonnelContext>();
+//builder.Services.AddDbContext<PersonnelContext>();
+builder.Services.AddScoped<DbContext, PersonnelContext>();
 //builder.Services.AddDbContext<PersonnelContext>(options =>
 //    options.UseSqlServer(configuration.GetConnectionString("DefaultConnection"), sqlServerOptionsAction: options =>
 //    {
@@ -32,11 +34,20 @@ builder.Services.AddDetection();
 builder.Services.AddAntiforgery(x => x.HeaderName = "XSRF-TOKEN");
 builder.Services.AddScoped<PersonnelShiftSystem.Application.Services.LoginService>();
 builder.Services.AddScoped<PersonnelShiftSystem.Application.Services.TeamService>();
+builder.Services.AddScoped<PersonnelShiftSystem.Application.Services.ShiftService>();
+builder.Services.AddScoped<PersonnelShiftSystem.Application.Services.AssignShiftTeamService>();
+builder.Services.AddScoped<PersonnelShiftSystem.Application.Services.UserService>();
+
 builder.Services.AddScoped<ExceptionHandlers>();
 builder.Services.AddControllers().AddJsonOptions(options =>
 {
     options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
     options.JsonSerializerOptions.WriteIndented = true;
+});
+
+builder.Services.AddDbContext<PersonnelContext>(options =>
+{
+    options.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
 });
 builder.Services.AddSession(options =>
 {
@@ -81,7 +92,24 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
         };
     });
 
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("AdminPolicy", policy =>
+    {
+        policy.RequireRole("Admin");
+    });
 
+    //options.AddPolicy("ClientPolicy", policy =>
+    //{
+    //    policy.RequireRole("client");
+    //});
+
+    // "guest" rolü olmayan tüm kullanýcýlarý içerir
+    options.AddPolicy("PersonnelPolicy", policy =>
+    {
+        policy.RequireRole("Personnel");
+    });
+});
 
 var app = builder.Build();
 
@@ -111,6 +139,7 @@ app.Use(async (context, next) =>
     {
         context.Response.Redirect("/AccessDenied");
     }
+
 });
 
 app.UseAuthentication();

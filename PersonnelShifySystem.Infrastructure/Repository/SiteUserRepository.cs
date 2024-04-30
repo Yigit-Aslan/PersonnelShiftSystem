@@ -44,5 +44,19 @@ namespace PersonnelShiftSystem.Infrastructure.Repository
 
             return $"{guid1}{guid2}";
         }
+
+
+        public static string GeneratePersonnelCode()
+        {
+            Random random = new Random();
+
+            const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+            StringBuilder code = new StringBuilder();
+            for (int i = 0; i < 8; i++)
+            {
+                code.Append(chars[random.Next(chars.Length)]);
+            }
+            return code.ToString().ToUpper();
+        }
     }
 }

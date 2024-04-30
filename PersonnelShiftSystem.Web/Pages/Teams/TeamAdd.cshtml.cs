@@ -6,8 +6,11 @@ using PersonnelShiftSystem.Application.Services;
 using PersonnelShiftSystem.Domain.Models;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using Microsoft.AspNetCore.Authorization;
 namespace PersonnelShiftSystem.Web.Pages.Teams
 {
+    [Authorize(Roles = "Admin")]
+
     public class TeamAddModel : PageModel
     {
         private IBaseModel baseModel;
@@ -44,7 +47,7 @@ namespace PersonnelShiftSystem.Web.Pages.Teams
             var getPersonnelTeam = (await baseModel.BaseUnitOfWork.PersonnelTeamRepository.QueryAsync(x => x.IsActive == baseModel.ItemActive())).ToList();
             var getUserIds = getPersonnelTeam.Select(u => u.UserId).ToHashSet();
             LeadUserModel = LeadUserModel.Where(u => !getUserIds.Contains(u.Id)).ToList();
-            PersonnelUserModel = LeadUserModel.Where(u => !getUserIds.Contains(u.Id)).ToList();
+            PersonnelUserModel = PersonnelUserModel.Where(u => !getUserIds.Contains(u.Id)).ToList();
 
         }
 
@@ -68,7 +71,7 @@ namespace PersonnelShiftSystem.Web.Pages.Teams
             if (ModelState.IsValid)
             {
                 var rData = HttpContext.Request.Form;
-                var personnelIds = rData["PersonnelIds"];
+                var personnelIds = rData["PersonnelIds[]"].ToList();
                 var teamLeadId = rData["TeamLeadId"];
                 PersonnelModel = new List<PersonnelTeamDto>();
 
@@ -97,11 +100,11 @@ namespace PersonnelShiftSystem.Web.Pages.Teams
                     PersonnelModel.Add(PersonnelTeamModel);
 
                 }
-                var loginResult = await teamService.AddTeamAsync(TeamModel, PersonnelModel);
+                var result = await teamService.AddTeamAsync(TeamModel, PersonnelModel);
 
-                if (loginResult is OkObjectResult okResult)
+                if (result is OkObjectResult okResult)
                 {
-                    var dataString = okResult.Value.ToString();
+                    var dataString = JsonConvert.SerializeObject(okResult.Value);
                     var data = JObject.Parse(dataString);
                     var isSuccess = (bool)data["isSuccess"];
                     var message = (string)data["message"];
@@ -109,7 +112,7 @@ namespace PersonnelShiftSystem.Web.Pages.Teams
 
                     return new JsonResult(new { isSuccess, message, url });
                 }
-                else if (loginResult is BadRequestObjectResult badRequestResult)
+                else if (result is BadRequestObjectResult badRequestResult)
                 {
                     var dataString = JsonConvert.SerializeObject(badRequestResult.Value);
                     var data = JObject.Parse(dataString);
@@ -123,6 +126,8 @@ namespace PersonnelShiftSystem.Web.Pages.Teams
             }
             else
             {
+                ModelState.Clear();
+
                 return new JsonResult(new { isSuccess = false, message = "Eksik alanları doldurunuz" });
             }
 

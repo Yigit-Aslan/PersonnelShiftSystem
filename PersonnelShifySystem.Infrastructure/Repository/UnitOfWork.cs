@@ -19,7 +19,7 @@ namespace PersonnelShiftSystem.Infrastructure.Repository
         private Repository<Team> _teamRepository;
         private Repository<PersonnelTeam> _personnelTeamRepository;
         private Repository<Shift> _shiftRepository;
-        private Repository<AssignTeamShift> _assignTeamShiftRepository;
+        private Repository<AssignShiftTeam> _assignShiftTeamRepository;
         private Repository<ErrorLog> _errorLogRepository;
         private Repository<UserLoginHistory> _userLoginHistoryRepository;
         public IRepository<Siteuser> SiteUserRepository => _siteUserRepository ?? (this._siteUserRepository = new Repository<Siteuser>(_context));
@@ -27,7 +27,7 @@ namespace PersonnelShiftSystem.Infrastructure.Repository
         public IRepository<Team> TeamRepository => _teamRepository ?? (this._teamRepository = new Repository<Team>(_context));
         public IRepository<PersonnelTeam> PersonnelTeamRepository => _personnelTeamRepository ?? (this._personnelTeamRepository = new Repository<PersonnelTeam>(_context));
         public IRepository<Shift> ShiftRepository => _shiftRepository ?? (this._shiftRepository = new Repository<Shift>(_context));
-        public IRepository<AssignTeamShift> AssignTeamShiftRepository => _assignTeamShiftRepository ?? (this._assignTeamShiftRepository = new Repository<AssignTeamShift>(_context));
+        public IRepository<AssignShiftTeam> AssignShiftTeamRepository => _assignShiftTeamRepository ?? (this._assignShiftTeamRepository = new Repository<AssignShiftTeam>(_context));
         public IRepository<ErrorLog> ErrorLogRepository => _errorLogRepository ?? (this._errorLogRepository = new Repository<ErrorLog>(_context));
         public IRepository<UserLoginHistory> UserLoginHistoryRepository => _userLoginHistoryRepository ?? (this._userLoginHistoryRepository = new Repository<UserLoginHistory>(_context));
 

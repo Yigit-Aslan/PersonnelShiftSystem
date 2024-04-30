@@ -112,7 +112,9 @@ namespace PersonnelShiftSystem.Application.Services
                 baseModel.WriteToSession("FirstName", currentUser.Name);
                 baseModel.WriteToSession("LastName", currentUser.Surname);
                 baseModel.WriteToSession("Email", currentUser.MailAddress);
+                baseModel.WriteToSession("RoleId", getRole.Id.ToString());
                 baseModel.WriteToSession("RoleName", getRole.RoleName);
+
 
                 baseModel.ClaimCookies();
 

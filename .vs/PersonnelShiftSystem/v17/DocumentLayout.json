@@ -38,8 +38,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -50,8 +54,7 @@
               "RelativeToolTip": "PersonnelShiftSystem.Web\\Pages\\Users\\UserList.cshtml.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-05T01:10:24.659Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-05T01:10:24.659Z"
             },
             {
               "$type": "Document",
@@ -76,8 +79,7 @@
               "RelativeToolTip": "PersonnelShifySystem.Application\\MapperProfile\\AutoMapperProfile.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAABcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-05T01:07:51.991Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-05T01:07:51.991Z"
             },
             {
               "$type": "Document",
@@ -89,8 +91,7 @@
               "RelativeToolTip": "PersonnelShifySystem.Application\\ViewModels\\TeamView\\TeamViewModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-05T01:06:45.734Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-05T01:06:45.734Z"
             },
             {
               "$type": "Document",
@@ -102,8 +103,7 @@
               "RelativeToolTip": "PersonnelShiftSystem.Web\\Pages\\Teams\\TeamList.cshtml",
               "ViewState": "AQIAAFEAAAAAAAAAAAAAAGAAAABiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-05T00:39:10.198Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-05T00:39:10.198Z"
             },
             {
               "$type": "Document",
@@ -115,12 +115,7 @@
               "RelativeToolTip": "PersonnelShiftSystem.Web\\Pages\\Users\\UserList.cshtml",
               "ViewState": "AQIAAJAAAAAAAAAAAAAAAJcAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-05T00:39:03.91Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "WhenOpened": "2024-04-05T00:39:03.91Z"
             },
             {
               "$type": "Document",
@@ -132,8 +127,7 @@
               "RelativeToolTip": "PersonnelShiftSystem.Web\\Pages\\Shared\\_Layout.cshtml",
               "ViewState": "AQIAALoAAAAAAAAAAAAAAOcAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-05T00:36:22.456Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-05T00:36:22.456Z"
             }
           ]
         }

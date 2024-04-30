@@ -18,6 +18,18 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\DorGoetzer\Documents\GitHub\PersonnelShiftSystem\PersonnelShiftSystem.Web
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/DorGoetzer/Documents/GitHub/PersonnelShiftSystem/PersonnelShiftSystem.Web/Pages/AssignShiftTeams/AssignShiftTeamAdd.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXNzaWduU2hpZnRUZWFtc1xBc3NpZ25TaGlmdFRlYW1BZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DorGoetzer/Documents/GitHub/PersonnelShiftSystem/PersonnelShiftSystem.Web/Pages/AssignShiftTeams/AssignShiftTeamEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXNzaWduU2hpZnRUZWFtc1xBc3NpZ25TaGlmdFRlYW1FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DorGoetzer/Documents/GitHub/PersonnelShiftSystem/PersonnelShiftSystem.Web/Pages/AssignShiftTeams/AssignShiftTeamList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXNzaWduU2hpZnRUZWFtc1xBc3NpZ25TaGlmdFRlYW1MaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/DorGoetzer/Documents/GitHub/PersonnelShiftSystem/PersonnelShiftSystem.Web/Pages/Dashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGFzaGJvYXJkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -30,12 +42,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/DorGoetzer/Documents/GitHub/PersonnelShiftSystem/PersonnelShiftSystem.Web/Pages/LogoutAccount/Logout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9nb3V0QWNjb3VudFxMb2dvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/DorGoetzer/Documents/GitHub/PersonnelShiftSystem/PersonnelShiftSystem.Web/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/DorGoetzer/Documents/GitHub/PersonnelShiftSystem/PersonnelShiftSystem.Web/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DorGoetzer/Documents/GitHub/PersonnelShiftSystem/PersonnelShiftSystem.Web/Pages/Shifts/ShiftAdd.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hpZnRzXFNoaWZ0QWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DorGoetzer/Documents/GitHub/PersonnelShiftSystem/PersonnelShiftSystem.Web/Pages/Shifts/ShiftEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hpZnRzXFNoaWZ0RWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DorGoetzer/Documents/GitHub/PersonnelShiftSystem/PersonnelShiftSystem.Web/Pages/Shifts/ShiftList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hpZnRzXFNoaWZ0TGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/DorGoetzer/Documents/GitHub/PersonnelShiftSystem/PersonnelShiftSystem.Web/Pages/Teams/TeamAdd.cshtml]
@@ -50,8 +78,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVhbXNcVGVhbUxpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/DorGoetzer/Documents/GitHub/PersonnelShiftSystem/PersonnelShiftSystem.Web/Pages/Teams/TeamTransfer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVhbXNcVGVhbVRyYW5zZmVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/DorGoetzer/Documents/GitHub/PersonnelShiftSystem/PersonnelShiftSystem.Web/Pages/Users/UserAdd.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcVXNlckFkZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DorGoetzer/Documents/GitHub/PersonnelShiftSystem/PersonnelShiftSystem.Web/Pages/Users/UserEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcVXNlckVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/DorGoetzer/Documents/GitHub/PersonnelShiftSystem/PersonnelShiftSystem.Web/Pages/Users/UserList.cshtml]

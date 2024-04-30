@@ -1,0 +1,90 @@
+﻿@page
+@model PersonnelShiftSystem.Web.Pages.Teams.TeamTransferModel
+@{
+    ViewData["Title"] = "Personel Transferi";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<div id="kt_app_toolbar" class="app-toolbar align-items-center justify-content-between py-4 py-lg-6">
+    <!--begin::Toolbar wrapper-->
+    <div class="d-flex flex-grow-1 flex-stack flex-wrap gap-2" id="kt_toolbar">
+        <!--begin::Page title-->
+        <div class="d-flex flex-column align-items-start me-3 gap-1 gap-lg-2">
+            <!--begin::Title-->
+            <h1 class="d-flex text-gray-900 fw-bold m-0 fs-3">Personel Transferi</h1>
+            <!--end::Title-->
+            <!--begin::Breadcrumb-->
+            <ul class="breadcrumb breadcrumb-dot fw-semibold text-gray-600 fs-7">
+                <!--begin::Item-->
+                <li class="breadcrumb-item text-gray-600">
+                    <a href="/Dashboard" class="text-gray-600 text-hover-primary">Anasayfa</a>
+                </li>
+                <!--end::Item-->
+                <!--begin::Item-->
+                <li class="breadcrumb-item text-gray-600">Takımları Listele</li>
+                <li class="breadcrumb-item text-gray-600">Personel Transferi</li>
+
+                <!--end::Item-->
+            </ul>
+            <!--end::Breadcrumb-->
+        </div>
+        <!--end::Page title-->
+    </div>
+    <!--end::Toolbar wrapper-->
+</div>
+<!--end::Toolbar-->
+
+
+
+<div id="kt_app_content" class="app-content flex-column-fluid">
+     <form method="post" id="postTransferForm" action="/Teams/TeamTransfer?handler=Transfer">
+        @Html.AntiForgeryToken()
+    <div class="row">
+        <div class="col-md-4">
+            <label>Takım</label>
+            <select class="form-control mb-3" id="TeamId" name="TeamId">
+                <option selected value="0">Takım seçiniz</option>
+
+                @foreach (var item in Model.TeamListModel)
+                {
+                    <option value="@item.Id">@item.TeamName</option>
+
+                }
+            </select>
+        </div>
+        <div class="col-md-2"></div> <!-- İki takım arasındaki boşluk -->
+        <div class="col-md-4">
+            <label>Transfer olunacak takım</label>
+            <select class="form-control mb-3" id="TeamTransferId" name="TeamTransferId">
+                <option selected value="0">Transfer edilecek takımı seçiniz</option>
+                @foreach (var item in Model.TeamListModel)
+                {
+                    <option value="@item.Id">@item.TeamName</option>
+
+                }
+            </select>
+        </div>
+    </div>
+    <div class="row mt-8">
+        <div class="col-md-4">
+            <label>Personel</label>
+            <select class="form-control mb-3" id="PersonnelId" name="PersonnelId">
+                <option selected value="0">Personel seçiniz</option>
+            </select>
+        </div>
+    </div>
+
+
+        <div class="kt-portlet__foot">
+            <div class="kt-form__actions">
+                <button type="submit" id="postTransfer" class="btn btn-primary">Transfer Et</button>
+                <button type="submit" class="btn btn-secondary" asp-page-handler="Cancel">İptal Et</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+@section Scripts{
+    <script src="~/assets/js/Pages/TeamJs/TeamTransfer.js"></script>
+}

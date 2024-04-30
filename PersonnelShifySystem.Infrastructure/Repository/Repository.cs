@@ -19,26 +19,20 @@ namespace PersonnelShiftSystem.Infrastructure.Repository
             _context = dbContext;
         }
 
+        public async Task RemoveAsync(T entity)
+        {
+            _dbSet.Remove(entity);
+        }
+
         public async Task AddAsync(T entity)
         {
-            await _dbSet.AddAsync(entity);
+            _dbSet.Add(entity);
         }
 
         public async Task<T> AddAsync(T entity, bool returnId = true)
         {
-            var addedEntity = _dbSet.Add(entity);
-            if (!returnId)
-                return null;
-
-            await _context.SaveChangesAsync();
-            return addedEntity.Entity;
-        }
-
-        public async Task UpdateAsync(T entity)
-        {
-            _dbSet.Attach(entity);
-            _context.Entry(entity).State = EntityState.Modified;
-            await _context.SaveChangesAsync();
+            var entry = _dbSet.Add(entity);
+            return entry.Entity;
         }
 
         public async Task DeleteAsync(T entity)
@@ -46,7 +40,19 @@ namespace PersonnelShiftSystem.Infrastructure.Repository
             if (_context.Entry(entity).State == EntityState.Detached)
                 _context.Attach(entity);
 
-            _dbSet.Remove(entity);
+            _dbSet.Remove(entity); 
+        }
+
+        public async Task UpdateAsync(T entity)
+        {
+            //_dbSet.Attach(entity);
+            _context.Entry(entity).State = EntityState.Modified;
+            //await _context.SaveChangesAsync();
+
+        }
+
+        public async Task SaveChangesAsync()
+        {
             await _context.SaveChangesAsync();
         }
 
@@ -58,11 +64,6 @@ namespace PersonnelShiftSystem.Infrastructure.Repository
         public async Task<List<T>> GetAllAsync()
         {
             return await _dbSet.ToListAsync();
-        }
-
-        public async Task SaveChangesAsync()
-        {
-            await _context.SaveChangesAsync();
         }
 
         public async Task<List<T>> GetAsync(Expression<Func<T, bool>> filter = null, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, params Expression<Func<T, object>>[] includes)

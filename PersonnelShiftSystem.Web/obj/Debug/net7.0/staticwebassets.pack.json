@@ -13,36 +13,24 @@
       "PackagePath": "staticwebassets\\assets\\js\\AjaxApi\\Route.js"
     },
     {
-      "Id": "C:\\Users\\DorGoetzer\\Documents\\GitHub\\PersonnelShiftSystem\\PersonnelShiftSystem.Web\\wwwroot\\assets\\js\\Pages\\Category.js",
-      "PackagePath": "staticwebassets\\assets\\js\\Pages\\Category.js"
+      "Id": "C:\\Users\\DorGoetzer\\Documents\\GitHub\\PersonnelShiftSystem\\PersonnelShiftSystem.Web\\wwwroot\\assets\\js\\Pages\\AssignJs\\Assign.js",
+      "PackagePath": "staticwebassets\\assets\\js\\Pages\\AssignJs\\Assign.js"
     },
     {
-      "Id": "C:\\Users\\DorGoetzer\\Documents\\GitHub\\PersonnelShiftSystem\\PersonnelShiftSystem.Web\\wwwroot\\assets\\js\\Pages\\Colors.js",
-      "PackagePath": "staticwebassets\\assets\\js\\Pages\\Colors.js"
+      "Id": "C:\\Users\\DorGoetzer\\Documents\\GitHub\\PersonnelShiftSystem\\PersonnelShiftSystem.Web\\wwwroot\\assets\\js\\Pages\\AssignJs\\AssignEdit.js",
+      "PackagePath": "staticwebassets\\assets\\js\\Pages\\AssignJs\\AssignEdit.js"
     },
     {
       "Id": "C:\\Users\\DorGoetzer\\Documents\\GitHub\\PersonnelShiftSystem\\PersonnelShiftSystem.Web\\wwwroot\\assets\\js\\Pages\\OrderJs\\order.js",
       "PackagePath": "staticwebassets\\assets\\js\\Pages\\OrderJs\\order.js"
     },
     {
-      "Id": "C:\\Users\\DorGoetzer\\Documents\\GitHub\\PersonnelShiftSystem\\PersonnelShiftSystem.Web\\wwwroot\\assets\\js\\Pages\\ProductEdit.js",
-      "PackagePath": "staticwebassets\\assets\\js\\Pages\\ProductEdit.js"
+      "Id": "C:\\Users\\DorGoetzer\\Documents\\GitHub\\PersonnelShiftSystem\\PersonnelShiftSystem.Web\\wwwroot\\assets\\js\\Pages\\ShiftJs\\Shift.js",
+      "PackagePath": "staticwebassets\\assets\\js\\Pages\\ShiftJs\\Shift.js"
     },
     {
-      "Id": "C:\\Users\\DorGoetzer\\Documents\\GitHub\\PersonnelShiftSystem\\PersonnelShiftSystem.Web\\wwwroot\\assets\\js\\Pages\\ProductList.js",
-      "PackagePath": "staticwebassets\\assets\\js\\Pages\\ProductList.js"
-    },
-    {
-      "Id": "C:\\Users\\DorGoetzer\\Documents\\GitHub\\PersonnelShiftSystem\\PersonnelShiftSystem.Web\\wwwroot\\assets\\js\\Pages\\Products.js",
-      "PackagePath": "staticwebassets\\assets\\js\\Pages\\Products.js"
-    },
-    {
-      "Id": "C:\\Users\\DorGoetzer\\Documents\\GitHub\\PersonnelShiftSystem\\PersonnelShiftSystem.Web\\wwwroot\\assets\\js\\Pages\\ProductsTable.js",
-      "PackagePath": "staticwebassets\\assets\\js\\Pages\\ProductsTable.js"
-    },
-    {
-      "Id": "C:\\Users\\DorGoetzer\\Documents\\GitHub\\PersonnelShiftSystem\\PersonnelShiftSystem.Web\\wwwroot\\assets\\js\\Pages\\SubCategory.js",
-      "PackagePath": "staticwebassets\\assets\\js\\Pages\\SubCategory.js"
+      "Id": "C:\\Users\\DorGoetzer\\Documents\\GitHub\\PersonnelShiftSystem\\PersonnelShiftSystem.Web\\wwwroot\\assets\\js\\Pages\\ShiftJs\\ShiftEdit.js",
+      "PackagePath": "staticwebassets\\assets\\js\\Pages\\ShiftJs\\ShiftEdit.js"
     },
     {
       "Id": "C:\\Users\\DorGoetzer\\Documents\\GitHub\\PersonnelShiftSystem\\PersonnelShiftSystem.Web\\wwwroot\\assets\\js\\Pages\\TeamJs\\Team.js",
@@ -53,12 +41,16 @@
       "PackagePath": "staticwebassets\\assets\\js\\Pages\\TeamJs\\TeamEdit.js"
     },
     {
-      "Id": "C:\\Users\\DorGoetzer\\Documents\\GitHub\\PersonnelShiftSystem\\PersonnelShiftSystem.Web\\wwwroot\\assets\\js\\Pages\\Users.js",
-      "PackagePath": "staticwebassets\\assets\\js\\Pages\\Users.js"
+      "Id": "C:\\Users\\DorGoetzer\\Documents\\GitHub\\PersonnelShiftSystem\\PersonnelShiftSystem.Web\\wwwroot\\assets\\js\\Pages\\TeamJs\\TeamTransfer.js",
+      "PackagePath": "staticwebassets\\assets\\js\\Pages\\TeamJs\\TeamTransfer.js"
     },
     {
-      "Id": "C:\\Users\\DorGoetzer\\Documents\\GitHub\\PersonnelShiftSystem\\PersonnelShiftSystem.Web\\wwwroot\\assets\\js\\Pages\\orders.js",
-      "PackagePath": "staticwebassets\\assets\\js\\Pages\\orders.js"
+      "Id": "C:\\Users\\DorGoetzer\\Documents\\GitHub\\PersonnelShiftSystem\\PersonnelShiftSystem.Web\\wwwroot\\assets\\js\\Pages\\UserJs\\User.js",
+      "PackagePath": "staticwebassets\\assets\\js\\Pages\\UserJs\\User.js"
+    },
+    {
+      "Id": "C:\\Users\\DorGoetzer\\Documents\\GitHub\\PersonnelShiftSystem\\PersonnelShiftSystem.Web\\wwwroot\\assets\\js\\Pages\\UserJs\\UserEdit.js",
+      "PackagePath": "staticwebassets\\assets\\js\\Pages\\UserJs\\UserEdit.js"
     },
     {
       "Id": "C:\\Users\\DorGoetzer\\Documents\\GitHub\\PersonnelShiftSystem\\PersonnelShiftSystem.Web\\wwwroot\\assets\\js\\custom\\account\\api-keys\\api-keys.js",
