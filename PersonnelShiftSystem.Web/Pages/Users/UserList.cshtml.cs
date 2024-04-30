@@ -25,12 +25,14 @@ namespace PersonnelShiftSystem.Web.Pages.Users
             baseModel = _baseModel;
             userService = _userService;
         }
-        public void OnGet()
+        public async Task OnGet()
         {
-            LoadInitials();
+            await baseModel.SaveVisitorInfo();
+
+            await LoadInitials();
         }
 
-        private async void LoadInitials()
+        private async Task LoadInitials()
         {
             var siteUsers = (await baseModel.BaseUnitOfWork.SiteUserRepository.QueryAsync(x => x.IsActive == Convert.ToSByte(baseModel.ItemActive()))).ToList();
 

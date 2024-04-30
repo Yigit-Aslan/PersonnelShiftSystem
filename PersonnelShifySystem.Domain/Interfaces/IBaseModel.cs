@@ -22,7 +22,7 @@ namespace PersonnelShiftSystem.Domain.Interfaces
 
         string ReadFromSession(string key);
 
-        void SaveVisitorInfo();
+        Task SaveVisitorInfo();
 
         string GetGuidId();
 

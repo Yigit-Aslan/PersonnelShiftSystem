@@ -25,6 +25,7 @@ namespace PersonnelShiftSystem.Domain.Models
         public Role Role { get; set; }
 		public ICollection<PersonnelTeam> PersonnelTeam { get; set; }
 		public ICollection<ErrorLog> ErrorLog { get; set; }
+        public ICollection<VisitorInfo> VisitorInfo { get; set; }
 
 
 	}

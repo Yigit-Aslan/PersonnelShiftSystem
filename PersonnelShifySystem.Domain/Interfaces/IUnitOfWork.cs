@@ -18,6 +18,7 @@ namespace PersonnelShiftSystem.Domain.Interfaces
         IRepository<AssignShiftTeam> AssignShiftTeamRepository { get; }
         IRepository<ErrorLog> ErrorLogRepository { get; }
         IRepository<UserLoginHistory> UserLoginHistoryRepository { get; }
+        IRepository<VisitorInfo> VisitorInfoRepository { get; }
 
         Task BeginTransactionAsync();
         public void CommitTransaction();

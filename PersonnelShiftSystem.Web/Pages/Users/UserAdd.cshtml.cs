@@ -28,9 +28,11 @@ namespace PersonnelShiftSystem.Web.Pages.Users
             userService = _userService;
         }
 
-        public async void OnGet()
+        public async Task OnGet()
         {
-           var roleModel = await baseModel.BaseUnitOfWork.RoleRepository.GetAllAsync();
+            await baseModel.SaveVisitorInfo();
+
+            var roleModel = await baseModel.BaseUnitOfWork.RoleRepository.GetAllAsync();
             RoleModel = baseModel.Mapper.Map(roleModel, RoleModel);
         }
 
@@ -73,6 +75,11 @@ namespace PersonnelShiftSystem.Web.Pages.Users
 
             return new JsonResult(new { isSuccess = false });
 
+        }
+
+        public async Task<IActionResult> OnPostCancel()
+        {
+            return await Task.FromResult(RedirectToPage("UserList"));
         }
     }
 }

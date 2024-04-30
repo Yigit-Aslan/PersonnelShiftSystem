@@ -27,12 +27,14 @@ namespace PersonnelShiftSystem.Web.Pages.Teams
             baseModel = _baseModel;
             teamService = _teamService;
         }
-        public void OnGet()
+        public async Task OnGet()
         {
-            LoadInitials();
+            await baseModel.SaveVisitorInfo();
+
+            await LoadInitials();
         }
 
-        private async void LoadInitials()
+        private async Task LoadInitials()
         {
             var teams = (await baseModel.BaseUnitOfWork.TeamRepository.QueryAsync(x => x.IsActive == baseModel.ItemActive())).ToList();
 

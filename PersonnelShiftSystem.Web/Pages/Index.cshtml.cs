@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using PersonnelShiftSystem.Application.Dtos;
 using PersonnelShiftSystem.Application.Services;
@@ -6,6 +7,7 @@ using PersonnelShiftSystem.Domain.Interfaces;
 
 namespace PersonnelShiftSystem.Web.Pages
 {
+    [AllowAnonymous]
     public class IndexModel : PageModel
     {
         private IBaseModel baseModel;
@@ -19,9 +21,8 @@ namespace PersonnelShiftSystem.Web.Pages
             _loginService = loginService;
         }
 
-        public void OnGet()
+        public async Task OnGet()
         {
-
         }
 
         public async Task<IActionResult> OnPostLogin()

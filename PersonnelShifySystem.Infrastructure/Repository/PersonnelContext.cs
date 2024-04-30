@@ -24,13 +24,14 @@ namespace PersonnelShiftSystem.Infrastructure.Repository
         public DbSet<AssignShiftTeam> AssignShiftTeam { get; set; }
         public DbSet<ErrorLog> ErrorLog { get; set; }
         public DbSet<UserLoginHistory> UserLoginHistory { get; set; }
+        public DbSet<VisitorInfo> VisitorInfo { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             IConfigurationRoot configuration = new ConfigurationBuilder()
-		    .SetBasePath(AppDomain.CurrentDomain.BaseDirectory)
-		    .AddJsonFile("appsettings.json")
-		    .Build();
+            .SetBasePath(AppDomain.CurrentDomain.BaseDirectory)
+            .AddJsonFile("appsettings.json")
+            .Build();
             optionsBuilder.UseSqlServer(configuration.GetConnectionString("DefaultConnection"));
         }
 
@@ -51,6 +52,11 @@ namespace PersonnelShiftSystem.Infrastructure.Repository
                 .WithOne(pt => pt.User)
                 .HasForeignKey(pt => pt.UserId);
 
+            modelBuilder.Entity<Siteuser>()
+                .HasMany(s => s.VisitorInfo)
+                .WithOne(r => r.User)
+                .HasForeignKey(e => e.UserId);
+
             modelBuilder.Entity<Team>()
                 .HasMany(t => t.PersonnelTeam)
                 .WithOne(pt => pt.Team)
@@ -65,6 +71,8 @@ namespace PersonnelShiftSystem.Infrastructure.Repository
                 .HasMany(s => s.AssignShiftTeam)
                 .WithOne(at => at.Shift)
                 .HasForeignKey(at => at.ShiftId);
+
+            
         }
     }
 }

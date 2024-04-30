@@ -22,6 +22,7 @@ namespace PersonnelShiftSystem.Infrastructure.Repository
         private Repository<AssignShiftTeam> _assignShiftTeamRepository;
         private Repository<ErrorLog> _errorLogRepository;
         private Repository<UserLoginHistory> _userLoginHistoryRepository;
+        private Repository<VisitorInfo> _visitorInfoRepository;
         public IRepository<Siteuser> SiteUserRepository => _siteUserRepository ?? (this._siteUserRepository = new Repository<Siteuser>(_context));
         public IRepository<Role> RoleRepository => _roleRepository ?? (this._roleRepository = new Repository<Role>(_context));
         public IRepository<Team> TeamRepository => _teamRepository ?? (this._teamRepository = new Repository<Team>(_context));
@@ -30,7 +31,7 @@ namespace PersonnelShiftSystem.Infrastructure.Repository
         public IRepository<AssignShiftTeam> AssignShiftTeamRepository => _assignShiftTeamRepository ?? (this._assignShiftTeamRepository = new Repository<AssignShiftTeam>(_context));
         public IRepository<ErrorLog> ErrorLogRepository => _errorLogRepository ?? (this._errorLogRepository = new Repository<ErrorLog>(_context));
         public IRepository<UserLoginHistory> UserLoginHistoryRepository => _userLoginHistoryRepository ?? (this._userLoginHistoryRepository = new Repository<UserLoginHistory>(_context));
-
+        public IRepository<VisitorInfo> VisitorInfoRepository => _visitorInfoRepository ?? (this._visitorInfoRepository = new Repository<VisitorInfo>(_context));
 
         public UnitOfWork(PersonnelContext context)
         {
@@ -72,6 +73,8 @@ namespace PersonnelShiftSystem.Infrastructure.Repository
             catch (Exception ex)
             {
                 var foo = ex.Message;
+                _context.Dispose();
+
             }
 
             return result;

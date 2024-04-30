@@ -37,12 +37,14 @@ namespace PersonnelShiftSystem.Web.Pages.AssignShiftTeams
             baseModel = _baseModel;
             assignService = _assignService;
         }
-        public void OnGet()
+        public async Task OnGet()
         {
-            LoadInitials();
+            await baseModel.SaveVisitorInfo();
+
+            await LoadInitials();
         }
 
-        private async void LoadInitials()
+        private async Task LoadInitials()
         {
             TeamModel = (await baseModel.BaseUnitOfWork.TeamRepository.QueryAsync(x => x.IsActive == baseModel.ItemActive())).ToList();
             ShiftModel = (await baseModel.BaseUnitOfWork.ShiftRepository.QueryAsync(x => x.IsActive == baseModel.ItemActive())).ToList();
@@ -111,7 +113,7 @@ namespace PersonnelShiftSystem.Web.Pages.AssignShiftTeams
 
         public async Task<IActionResult> OnPostCancel()
         {
-            return RedirectToPage("AssignShiftTeamList");
+            return await Task.FromResult(RedirectToPage("AssignShiftTeamList"));
         }
     }
 }

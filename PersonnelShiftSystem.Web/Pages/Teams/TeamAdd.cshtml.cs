@@ -34,12 +34,14 @@ namespace PersonnelShiftSystem.Web.Pages.Teams
             baseModel = _baseModel;
             teamService = _teamService;
         }
-        public void OnGet()
+        public async Task OnGet()
         {
-            LoadInitials();
+            await baseModel.SaveVisitorInfo();
+
+            await LoadInitials();
         }
 
-        private async void LoadInitials()
+        private async Task LoadInitials()
         {
             LeadUserModel = (await baseModel.BaseUnitOfWork.SiteUserRepository.QueryAsync(x => x.IsActive == baseModel.ItemActive())).ToList();
             PersonnelUserModel = (await baseModel.BaseUnitOfWork.SiteUserRepository.QueryAsync(x => x.IsActive == baseModel.ItemActive())).ToList();
@@ -137,7 +139,7 @@ namespace PersonnelShiftSystem.Web.Pages.Teams
 
         public async Task<IActionResult> OnPostCancel()
         {
-            return RedirectToPage("TeamList");
+            return await Task.FromResult(RedirectToPage("TeamList"));
         }
     }
 }

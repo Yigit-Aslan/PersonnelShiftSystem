@@ -27,8 +27,10 @@ namespace PersonnelShiftSystem.Web.Pages.Shifts
 
         }
 
-        public void OnGet()
+        public async Task OnGet()
         {
+            await baseModel.SaveVisitorInfo();
+
         }
 
         public async Task<IActionResult> OnPostAddShift()
@@ -78,7 +80,7 @@ namespace PersonnelShiftSystem.Web.Pages.Shifts
 
         public async Task<IActionResult> OnPostCancel()
         {
-            return RedirectToPage("ShiftList");
+            return await Task.FromResult(RedirectToPage("ShiftList"));
         }
     }
 }

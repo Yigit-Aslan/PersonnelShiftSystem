@@ -26,8 +26,10 @@ namespace PersonnelShiftSystem.Web.Pages.Shifts
             baseModel = _baseModel;
             shiftService = _shiftService;
         }
-        public async void OnGet()
+        public async Task OnGet()
         {
+            await baseModel.SaveVisitorInfo();
+
             var shift = await baseModel.BaseUnitOfWork.ShiftRepository.GetFirstOrDefaultAsync(x => x.Id == Id && x.IsActive == baseModel.ItemActive());
 
             ShiftModel = new ShiftDto()
@@ -90,7 +92,7 @@ namespace PersonnelShiftSystem.Web.Pages.Shifts
         }
         public async Task<IActionResult> OnPostCancel()
         {
-            return RedirectToPage("ShiftList");
+            return await Task.FromResult(RedirectToPage("ShiftList"));
         }
     }
 }

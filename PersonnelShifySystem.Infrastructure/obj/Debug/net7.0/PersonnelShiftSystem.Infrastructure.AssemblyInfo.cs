@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PersonnelShiftSystem.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9e29db09bcd73e8bd9b4a5a5b7ef3f9bb264574c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6ea90938c01d514d182d8c94d1d1c034fcf34e9f")]
 [assembly: System.Reflection.AssemblyProductAttribute("PersonnelShiftSystem.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PersonnelShiftSystem.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -26,8 +26,10 @@ namespace PersonnelShiftSystem.Web.Pages.Shifts
             baseModel = _baseModel;
             shiftService = _shiftService;
         }
-        public async void OnGet()
+        public async Task OnGet()
         {
+            await baseModel.SaveVisitorInfo();
+
             var shifts = (await baseModel.BaseUnitOfWork.ShiftRepository.QueryAsync(x=>x.IsActive == baseModel.ItemActive())).ToList();
             ShiftModel = baseModel.Mapper.Map(shifts, ShiftModel);
 

@@ -27,8 +27,10 @@ namespace PersonnelShiftSystem.Web.Pages.AssignShiftTeams
             baseModel = _baseModel;
             assignShiftTeamService = _assignShiftTeamService;
         }
-        public async void OnGet()
+        public async Task OnGet()
         {
+            await baseModel.SaveVisitorInfo();
+
             var assignedShifts = (await baseModel.BaseUnitOfWork.AssignShiftTeamRepository.QueryAsync(x => x.IsActive == baseModel.ItemActive())).ToList();
             AssignShiftModel = baseModel.Mapper.Map(assignedShifts, AssignShiftModel);
 

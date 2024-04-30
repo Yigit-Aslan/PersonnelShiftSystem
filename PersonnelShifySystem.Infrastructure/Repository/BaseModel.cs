@@ -2,9 +2,11 @@
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Options;
 using Microsoft.Identity.Client;
 using PersonnelShiftSystem.Domain.Interfaces;
+using PersonnelShiftSystem.Domain.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.Design;
@@ -23,12 +25,6 @@ namespace PersonnelShiftSystem.Infrastructure.Repository
 
         private IHttpContextFactory _httpFactory { get; set; }
 
-        //private IhyaTekstilCore.AppConfig.IhyaTekstilConfiguration _appConfig;
-
-        //public BaseUIStatusModel UIStatus { get; set; }
-
-        //private IConfiguration _configuration;
-
         public IMapper Mapper { get; set; }
 
         public IUnitOfWork BaseUnitOfWork { get; set; }
@@ -43,9 +39,7 @@ namespace PersonnelShiftSystem.Infrastructure.Repository
             Mapper = mapper;
             BaseUnitOfWork = unitOfWork;
             _detectionService = detectionService;
-            //_appConfig = AppConfig.Value;
 
-            SaveVisitorInfo();
         }
 
 
@@ -81,20 +75,6 @@ namespace PersonnelShiftSystem.Infrastructure.Repository
             _httpContextAccessor.HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal);
         }
 
-        //public string GetLocalizedContent(string param)
-        //{
-        //    return _localizer.Get(param);
-        //}
-
-        //public string GetAppConfig(BookStore.AppConfig.AppConfigEnum appConfig)
-        //{
-        //    if (appConfig == BookStore.AppConfig.AppConfigEnum.RootPath)
-        //        return _appConfig.RootPath;
-
-
-        //    return string.Empty;
-        //}
-
 
         public int? ItemNullInt()
         {
@@ -106,33 +86,33 @@ namespace PersonnelShiftSystem.Infrastructure.Repository
 
         public byte ItemPassive() => Convert.ToByte(false);
 
-        public void SaveVisitorInfo()
+        public async Task SaveVisitorInfo()
         {
-            //CultureInfo ci = CultureInfo.InstalledUICulture;
+                CultureInfo ci = CultureInfo.InstalledUICulture;
 
-            ////var path =  _httpContextAccessor.HttpContext.Request.Path.Value;
+                //var path =  _httpContextAccessor.HttpContext.Request.Path.Value;
+                var userIdString = ReadFromSession("UserId");
 
-            //Visitorinfo visitorInfoViewModel = new Visitorinfo()
-            //{
-            //    Id = GetGuidId(),
-            //    UserId = ReadFromSession("UserId"),
-            //    OperatingSystemName = _detectionService.Platform.Name.ToString(),
-            //    OperatingSystemProcessor = _detectionService.Platform.Processor.ToString(),
-            //    OperatingSystemVersionMajor = Convert.ToInt32(_detectionService.Platform.Version.Major),
-            //    OperatingSystemLanguage = ci.Name.ToString(),
-            //    BrowserName = _detectionService.Browser.Name.ToString(),
-            //    BrowserVersionMajor = Convert.ToInt32(_detectionService.Browser.Version.Major),
-            //    BrowserLanguage = _httpContextAccessor.HttpContext.Request.Headers["Accept-Language"].ToString().Split(";").FirstOrDefault()?.Split(",").FirstOrDefault(),
-            //    DeviceType = _detectionService.Device.Type.ToString(),
-            //    EngineType = _detectionService.Engine.Name.ToString(),
-            //    UserAgent = _detectionService.UserAgent.ToString(),
-            //    UserIpAddress = _httpContextAccessor.HttpContext.Connection.RemoteIpAddress.ToString(),
-            //    VisitDate = DateTime.Now,
-            //    Path = _httpContextAccessor.HttpContext.Request.Path.ToString()
-            //};
+                VisitorInfo visitorInfoViewModel = new VisitorInfo()
+                {
+                    UserId = string.IsNullOrEmpty(userIdString) ? 0 : Convert.ToInt32(userIdString),
+                    OperatingSystemName = _detectionService.Platform.Name.ToString(),
+                    OperatingSystemProcessor = _detectionService.Platform.Processor.ToString(),
+                    OperatingSystemVersionMajor = Convert.ToInt32(_detectionService.Platform.Version.Major),
+                    OperatingSystemLanguage = ci.Name.ToString(),
+                    BrowserName = _detectionService.Browser.Name.ToString(),
+                    BrowserVersionMajor = Convert.ToInt32(_detectionService.Browser.Version.Major),
+                    BrowserLanguage = _httpContextAccessor.HttpContext.Request.Headers["Accept-Language"].ToString().Split(";").FirstOrDefault()?.Split(",").FirstOrDefault(),
+                    DeviceType = _detectionService.Device.Type.ToString(),
+                    EngineType = _detectionService.Engine.Name.ToString(),
+                    UserAgent = _detectionService.UserAgent.ToString(),
+                    UserIpAddress = _httpContextAccessor.HttpContext.Connection.RemoteIpAddress.ToString(),
+                    VisitDate = DateTime.Now,
+                    Path = _httpContextAccessor.HttpContext.Request.Path.ToString()
+                };
 
-            //BaseUnitOfWork.VisitorInfoRepository.Add(visitorInfoViewModel);
-            //BaseUnitOfWork.VisitorInfoRepository.SaveChanges();
+               await BaseUnitOfWork.VisitorInfoRepository.AddAsync(visitorInfoViewModel);
+               await BaseUnitOfWork.VisitorInfoRepository.SaveChangesAsync();
         }
 
         public string GetGuidId()

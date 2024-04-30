@@ -40,6 +40,8 @@ namespace PersonnelShiftSystem.Web.Pages.Teams
         }
         public async Task OnGetAsync()
         {
+            await baseModel.SaveVisitorInfo();
+
             await LoadInitialsAsync();
         }
 
@@ -201,7 +203,7 @@ namespace PersonnelShiftSystem.Web.Pages.Teams
         }
         public async Task<IActionResult> OnPostCancel()
         {
-            return RedirectToPage("TeamList");
+            return await Task.FromResult(RedirectToPage("TeamList"));
         }
     }
 }
